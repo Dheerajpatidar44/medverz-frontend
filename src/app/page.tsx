@@ -6,7 +6,6 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ExpertiseGrid from "@/components/ExpertiseGrid";
 import CourseGrid from "@/components/CourseGrid";
-import StudyAbroad from "@/components/StudyAbroad";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TeamSection from "@/components/TeamSection";
 import FAQ from "@/components/FAQ";
@@ -22,7 +21,6 @@ export default function Home() {
         <ServicesSection />
         <ExpertiseGrid />
         <CourseGrid />
-        <StudyAbroad />
         <WhyChooseUs />
         <TeamSection />
         <TestimonialCarousel />

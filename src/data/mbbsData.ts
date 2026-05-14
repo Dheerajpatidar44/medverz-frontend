@@ -645,18 +645,55 @@ export const mbbsData: Country[] = [
         name: 'Orenburg State Medical University',
         slug: 'orenburg-state-medical-university',
         image: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1000',
-        description: 'Orenburg State Medical University was first established in the year 1944. The University is located in Orenburg City.',
+        description: 'Established in 1944, Orenburg State Medical University is one of the top-ranked government medical universities in Orenburg, Russia.',
         location: 'Orenburg, Russia',
-        ranking: 'Renowned Medical University',
+        ranking: 'Top Government Medical University',
         established: '1944',
         medium: 'English',
-        duration: '6 Years',
-        fees: { tuition: '$6,500 / Year', hostel: 'Included', total: '₹35 Lakhs (Approx.)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        duration: '6 Years (with internship)',
+        fees: { 
+          tuition: '$ 6,500 / Year', 
+          hostel: 'Included in 1st Year', 
+          mess: '$ 1,500 (1st Year)',
+          oneTime: '$ 1,500',
+          total: '₹ 39,48,000 (Approx.)' 
+        },
+        overview: `Established in 1944, Orenburg State Medical University (OrSMU) is one of the top-ranked government medical universities located in the city of Orenburg, Russia. It offers courses leading to officially recognised higher education degrees such as bachelor’s degrees, master’s degrees, and doctorate degrees in several areas of study. The university meets all modern standards and requirements presented to higher medical schools. And that is why Orenburg State Medical University is the most desired Russian medical university, majorly amongst Indian students who desire to study MBBS in Russia.
+
+Orenburg State Medical University provides the best-quality educational programs that are designed to offer training to the next generation of medical researchers, physicians, and healthcare professionals. Many renowned specialists in the medicine field have graduated from this university. They are working in state and private medical and preventive institutions, taking leading positions in state administrative structures and solving primary issues in the development of modern medicine.
+
+With a focused and skilled faculty, state-of-the-art infrastructure, a library, well-equipped laboratories, museums, and skill lab facilities to offer better hands-on experience to the students, the university has been successful in attracting students globally, including Indian students. The medical graduates from OrSMU have been successfully practicing medicine in India, the UK, the USA, Malaysia, the Middle East, and other European countries.
+
+Orenburg State Medical University strives to provide the best medical education to its students to prepare them to take up the challenges in the future so that when medical students graduate from this university, they have the potential to handle the responsibilities of the medicine field.
+
+At present, 1200+ Indian students are studying MBBS at Orenburg State Medical University.`,
+        whyStudy: [
+          'No entrance examination, donation needed.',
+          'Easy Admission procedure.',
+          'High norms of medical education.',
+          'The cost of studying MBBS in Russia is affordable.',
+          'The medium of education in Russia in English.',
+          'The MBBS degree from Orenburg State Medical University is honored by all the major associations like ECFMG, WDOMS, FAIMER, NMC(MCI), etc. The Indian scholars who complete their MBBS from Orenburg state medical university can work in India as well after passing Foreign Medical Graduate Examination.',
+          'Hostels with best facilities.',
+          'More than 1200 Indian students are currently studying at Orenburg State Medical University.',
+          'The students can choose between English and Russian medium of study at their convenience.'
+        ],
+        admissionProcess: [
+          'Submit the Application form along with the required documents.',
+          'Pay Fees and get a confirmation letter.',
+          'Submit Passport, get Visa/Invitation Letter.',
+          'Get Visa and fly to Russia.',
+          'Join your classes.'
+        ],
+        documentsRequired: [
+          'Class 10th pass certificate and mark sheet',
+          'Class 12th pass certificate and mark sheet',
+          'NEET score card',
+          'Valid passport',
+          'Passport-size photographs',
+          'Medical test report including HIV negative report.'
+        ],
+        hostelFacility: `Hi-tech robotic learning is offered to the students for a real-life experience and insightful learning during practical sessions. OSMU has 3 hostels within the University out of which the third hostel is reserved for the Indian students. These hostels give a very homely feeling for the students who came from different places. There is a sports club in the University which was first inaugurated in the year 2013. Organizing and improving the sports work for students, propaganda of healthy lifestyle and upgrading sportsmanship is the prime aim of the University. There are 12 sports leagues in the club in which all the Indian students participate such as aerobics, swimming, basketball, volleyball, indoor soccer, track-and-field athletics, table tennis, lifting, skiing, chess, etc. There is an Indian mess in the hostel of the university for Indian students.`,
         gallery: []
       },
       {

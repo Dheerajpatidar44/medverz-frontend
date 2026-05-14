@@ -89,6 +89,7 @@ const Hero = () => {
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
                 <button 
+                  onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
                   className="bg-primary text-white px-6 py-3 md:px-12 md:py-5 rounded-full font-bold text-base md:text-xl hover:bg-primary-dark transition-all shadow-2xl hover:shadow-primary/20 active:scale-95"
                 >
                   Get Started

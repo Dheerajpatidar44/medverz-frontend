@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { ChevronDown, Menu, X } from 'lucide-react';
 
 import { mbbsData } from '@/data/mbbsData';
@@ -11,6 +12,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
 
   React.useEffect(() => {
     setMounted(true);
@@ -71,6 +73,7 @@ const Navbar = () => {
       ]
     },
     { name: 'TEAM', href: '/team' },
+    { name: 'WORK ABROAD', href: '/work-abroad' },
     { name: 'CONTACT US', href: '/contact' },
   ];
 
@@ -79,7 +82,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
           <Image 
-            src="/medverz.png" 
+            src={pathname === '/work-abroad' ? '/medverz.png' : '/medverz.png'} // TODO: Replace the first /medverz.png with work abroad logo path when provided
             alt="Medverz logo" 
             width={180} 
             height={50} 
@@ -150,6 +153,7 @@ const Navbar = () => {
       
       <div className="hidden lg:block">
         <button 
+          onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
           className="bg-primary text-white px-7 py-2.5 rounded-full font-bold hover:bg-primary-dark transition-all shadow-md hover:shadow-lg active:scale-95"
         >
           APPLY NOW
@@ -160,6 +164,7 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center gap-3">
         {mounted && (
           <button 
+            onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
             className="bg-primary text-white px-4 py-2 rounded-full text-[10px] font-bold shadow-md active:scale-95"
           >
             APPLY NOW
@@ -245,6 +250,10 @@ const Navbar = () => {
               </div>
             ))}
             <button 
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.dispatchEvent(new CustomEvent('open-lead-popup'));
+              }}
               className="bg-primary text-white px-6 py-3.5 rounded-full font-bold hover:bg-primary-dark transition-all mt-4 shadow-lg"
               suppressHydrationWarning
             >

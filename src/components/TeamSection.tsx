@@ -15,8 +15,20 @@ const teamMembers = [
   {
     name: 'AAKIB KHAN',
     position: 'Founder & Director',
-    image: '/images/office/office4.jpeg',
+    image: '/images/teams/Aakib Khan.jpeg',
     bio: 'Leading Medverz Education with a vision to make global medical education accessible for everyone.'
+  },
+  {
+    name: 'Mr Mehmood Khan',
+    position: 'Managing Director',
+    image: '/images/teams/Mehmood Khan.jpeg',
+    bio: 'Ensuring operational excellence and strategic growth across all our educational programs.'
+  },
+  {
+    name: 'Mr Aasif Khan',
+    position: 'Administrative Head',
+    image: '/images/teams/Aasif Khan.jpeg',
+    bio: 'Managing administrative operations to provide seamless support for all our students.'
   },
   {
     name: 'Dr Harish Khichi',
@@ -105,7 +117,7 @@ const TeamSection = () => {
               </div>
 
               <div className="space-y-2 px-2">
-                <h3 className="text-xl font-extrabold text-gray-900 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-extrabold text-gray-900 group-hover:text-primary transition-colors uppercase">
                   {member.name}
                 </h3>
                 <p className="text-primary font-bold text-xs uppercase tracking-widest">

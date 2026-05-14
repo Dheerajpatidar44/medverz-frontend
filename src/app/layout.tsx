@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Medverz Education - Affordable MBBS Admissions Worldwide",
+  title: "Medverz Education - Study MBBS Abroad 2026",
   description: "Get affordable MBBS admissions worldwide with expert counseling. We help students secure seats in top medical universities across Russia, Georgia, Kazakhstan, and more.",
 };
 

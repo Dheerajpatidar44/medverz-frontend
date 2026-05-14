@@ -137,7 +137,10 @@ const PhotosPage = () => {
               <h2 className="text-3xl md:text-5xl font-black text-gray-900 leading-tight">Begin Your Medical Journey</h2>
               <p className="text-gray-500 text-lg md:text-xl font-medium">Your path to becoming a global doctor starts with Medverz. Join us today.</p>
             </div>
-            <button className="bg-primary text-white px-12 py-5 rounded-full font-black text-lg hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 active:scale-95 uppercase tracking-widest">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
+              className="bg-primary text-white px-12 py-5 rounded-full font-black text-lg hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 active:scale-95 uppercase tracking-widest"
+            >
               Apply Now
             </button>
           </div>

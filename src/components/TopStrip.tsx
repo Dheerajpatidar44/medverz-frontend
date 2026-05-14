@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkle, Phone } from 'lucide-react';
+import { Sparkle, Phone, Mail } from 'lucide-react';
 
 const TopStrip = () => {
   const marqueeText = "NEET 2025 Admissions Open • Expert Counseling for Medical Aspirants • Top Medical Colleges Guidance • Career Seminars Every Sunday • Register Now for Free Consultation • ";
@@ -15,24 +15,32 @@ const TopStrip = () => {
   };
 
   return (
-    <div className="bg-white text-primary py-2 border-b border-gray-100 w-full relative overflow-hidden shadow-sm">
-      <div className="container mx-auto px-3 sm:px-6 md:px-12 flex items-center justify-between gap-2 sm:gap-4">
+    <div className="bg-white text-primary py-2.5 border-b border-gray-100 w-full relative overflow-hidden shadow-sm">
+      <div className="container mx-auto px-2 sm:px-6 md:px-12 flex flex-wrap sm:flex-nowrap items-center justify-between gap-y-2 sm:gap-y-0 gap-x-1 sm:gap-4">
         
-        {/* Left: Student Helpline */}
-        <div className="flex items-center gap-1.5 shrink-0 z-10">
-          <Phone size={13} className="text-primary fill-primary/20" />
-          <a href="tel:+919991106101" className="text-[9px] sm:text-[11px] md:text-[12px] font-bold tracking-wider uppercase hover:text-primary-dark transition-all duration-300">
-            <span className="hidden xs:inline text-gray-400">Helpline: </span>+91 99911 06101
-          </a>
+        {/* Left: Contact Info */}
+        <div className="flex items-center gap-1 sm:gap-4 shrink-0 z-10 order-1">
+          <div className="flex items-center gap-1.5">
+            <Phone className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] text-primary fill-primary/20" />
+            <a href="tel:+919070107030" className="text-[10px] sm:text-[11px] md:text-[13px] font-bold tracking-wider uppercase hover:text-primary-dark transition-all duration-300 whitespace-nowrap">
+              <span className="text-gray-400">Student Helpline: </span>+91 90701 07030
+            </a>
+          </div>
+          <div className="hidden sm:flex items-center gap-1.5 border-l border-gray-200 pl-3 sm:pl-4">
+            <Mail className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] text-primary" />
+            <a href="mailto:info@medverzeducation.com" className="text-[10px] sm:text-[11px] md:text-[13px] font-bold tracking-wider hover:text-primary-dark transition-all duration-300">
+              info@medverzeducation.com
+            </a>
+          </div>
         </div>
 
         {/* Center: Marquee */}
-        <div className="flex-1 overflow-hidden relative mx-1 sm:mx-4 bg-primary/5 py-1 rounded-full border border-primary/10">
+        <div className="w-full sm:flex-1 overflow-hidden relative mx-0 sm:mx-4 bg-primary/5 py-1.5 rounded-full border border-primary/10 order-3 sm:order-2 mt-1 sm:mt-0">
           <div className="flex whitespace-nowrap animate-marquee">
             <div className="flex items-center gap-6 px-4 shrink-0">
               <div className="flex items-center gap-3">
-                <Sparkle size={10} className="text-primary fill-primary" />
-                <span className="text-[8px] sm:text-[10px] md:text-[11px] lg:text-[12px] font-extrabold tracking-widest uppercase text-primary">
+                <Sparkle className="w-[12px] h-[12px] sm:w-[14px] sm:h-[14px] text-primary fill-primary" />
+                <span className="text-[9px] sm:text-[11px] md:text-[13px] font-extrabold tracking-widest uppercase text-primary">
                   {marqueeText}
                 </span>
               </div>
@@ -40,8 +48,8 @@ const TopStrip = () => {
             {/* Duplicate for seamless loop */}
             <div className="flex items-center gap-6 px-4 shrink-0">
               <div className="flex items-center gap-3">
-                <Sparkle size={10} className="text-primary fill-primary" />
-                <span className="text-[8px] sm:text-[10px] md:text-[11px] lg:text-[12px] font-extrabold tracking-widest uppercase text-primary">
+                <Sparkle className="w-[12px] h-[12px] sm:w-[14px] sm:h-[14px] text-primary fill-primary" />
+                <span className="text-[9px] sm:text-[11px] md:text-[13px] font-extrabold tracking-widest uppercase text-primary">
                   {marqueeText}
                 </span>
               </div>
@@ -50,24 +58,24 @@ const TopStrip = () => {
         </div>
 
         {/* Right: Social Icons */}
-        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0 z-10">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0 z-10 order-2 sm:order-3">
           <a href="https://www.facebook.com/share/1LU3WduLK8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-[#1877F2] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.facebook}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.facebook} /></svg>
           </a>
           <a href="https://www.instagram.com/medverz.education?igsh=MW9wM2pkOGF4YTJ1YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-[#E4405F] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.instagram}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.instagram} /></svg>
           </a>
           <a href="https://x.com/medverz?s=21" target="_blank" rel="noopener noreferrer" className="text-[#000000] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.twitter}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.twitter} /></svg>
           </a>
           <a href="https://www.linkedin.com/company/medverz-education/" target="_blank" rel="noopener noreferrer" className="text-[#0A66C2] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.linkedin}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.linkedin} /></svg>
           </a>
           <a href="https://pin.it/AW1hLoCoC" target="_blank" rel="noopener noreferrer" className="text-[#BD081C] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.pinterest}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.pinterest} /></svg>
           </a>
           <a href="http://yt.openinapp.co/yqz80" target="_blank" rel="noopener noreferrer" className="text-[#FF0000] hover:scale-125 transition-all duration-300">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d={icons.youtube}/></svg>
+            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.youtube} /></svg>
           </a>
         </div>
 
