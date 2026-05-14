@@ -67,6 +67,35 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
     }
   };
 
+  const renderContent = (text: string) => {
+    if (!text) return null;
+    const blocks = text.split('\n\n');
+    return blocks.map((block, i) => {
+      if (block.startsWith('- ')) {
+        const items = block.split('\n').map(item => item.replace('- ', '').trim());
+        return (
+          <ul key={i} className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+            {items.map((item, j) => <li key={j}>{item}</li>)}
+          </ul>
+        );
+      }
+      if (block.includes('\n- ')) {
+        const parts = block.split('\n- ');
+        const pText = parts[0];
+        const items = parts.slice(1).map(item => item.trim());
+        return (
+          <div key={i} className="mt-4">
+            <p className="text-gray-700 leading-relaxed">{pText}</p>
+            <ul className="list-disc pl-5 mt-2 space-y-2 text-gray-700">
+              {items.map((item, j) => <li key={j}>{item}</li>)}
+            </ul>
+          </div>
+        );
+      }
+      return <p key={i} className="text-gray-700 leading-relaxed mt-4 whitespace-pre-line">{block}</p>;
+    });
+  };
+
   return (
     <main className="min-h-screen bg-white">
       {/* University Hero */}
@@ -123,130 +152,191 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
 
             {/* Left Column: Details */}
-            <div className="lg:col-span-2 space-y-20">
+            <div className="lg:col-span-2 space-y-12">
+              
+              {/* Image Placeholder / Banner */}
+              <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-sm mb-12">
+                <Image
+                  src={university.image}
+                  alt={university.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-              {/* Overview */}
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
-                  <Info size={16} />
-                  Overview
-                </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">About the University</h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  {university.overview}
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                  {[
-                    { icon: Clock, label: 'Course Duration', value: university.duration },
-                    { icon: GraduationCap, label: 'Medium of Instruction', value: university.medium },
-                    { icon: Building2, label: 'Type', value: 'Government University' },
-                    { icon: CheckCircle2, label: 'Recognition', value: 'NMC, WHO Approved' }
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                      <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-sm">
-                        <item.icon size={20} />
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">{item.label}</p>
-                        <p className="text-gray-900 font-bold">{item.value}</p>
-                      </div>
-                    </div>
-                  ))}
+              {/* Main Overview Section */}
+              <div>
+                <h2 className="text-3xl font-bold text-primary mb-6">{university.name}</h2>
+                <div className="prose max-w-none text-gray-700 space-y-4">
+                  {renderContent(university.overview)}
                 </div>
               </div>
 
-              {/* Fee Structure */}
-              <div id="fees" className="space-y-6 bg-primary/5 p-8 md:p-12 rounded-[3rem] border border-primary/10">
-                <div className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
-                  <Banknote size={16} />
-                  Investment
-                </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Fee Structure</h2>
-                <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm mt-8">
-                  <table className="w-full text-left">
-                    <thead>
-                      <tr className="bg-gray-50 border-b border-gray-100">
-                        <th className="px-6 py-4 font-bold text-gray-900">Particulars</th>
-                        <th className="px-6 py-4 font-bold text-gray-900">Amount (Per Year)</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-50">
+              {/* Overview Table */}
+              <div className="pt-6">
+                <h3 className="text-2xl font-bold text-primary mb-6">{university.name} Overview</h3>
+                <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                  <table className="w-full text-left border-collapse text-sm">
+                    <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 text-gray-600 font-medium">Tuition Fees</td>
-                        <td className="px-6 py-4 text-gray-900 font-bold">{university.fees.tuition}</td>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200 w-1/3">Year of Establishment</td>
+                        <td className="p-4 bg-white">{university.established}</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 text-gray-600 font-medium">Hostel Fees</td>
-                        <td className="px-6 py-4 text-gray-900 font-bold">{university.fees.hostel}</td>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">Type of University</td>
+                        <td className="p-4 bg-white">Government</td>
                       </tr>
-                      {university.fees.mess && (
-                        <tr>
-                          <td className="px-6 py-4 text-gray-600 font-medium">Mess Fees</td>
-                          <td className="px-6 py-4 text-gray-900 font-bold">{university.fees.mess}</td>
-                        </tr>
-                      )}
-                      {university.fees.medicalVisa && (
-                        <tr>
-                          <td className="px-6 py-4 text-gray-600 font-medium">Medical/Visa Fees</td>
-                          <td className="px-6 py-4 text-gray-900 font-bold">{university.fees.medicalVisa}</td>
-                        </tr>
-                      )}
-                      <tr className="bg-primary/10">
-                        <td className="px-6 py-4 text-primary font-extrabold">Total Package</td>
-                        <td className="px-6 py-4 text-primary font-extrabold">{university.fees.total}</td>
+                      <tr>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">Duration of MBBS</td>
+                        <td className="p-4 bg-white">{university.duration}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">Recognitions</td>
+                        <td className="p-4 bg-white">NMC, WHO Approved, WDOMS, ECFMG, FAIMER</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">Intake Period</td>
+                        <td className="p-4 bg-white">September</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">Medium of Teaching</td>
+                        <td className="p-4 bg-white">{university.medium}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-bold bg-gray-50 border-r border-gray-200">NEET Requirement</td>
+                        <td className="p-4 bg-white">Yes</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <p className="text-xs text-gray-400 font-medium italic">*Fees mentioned above are approximate and subject to change as per currency fluctuations.</p>
               </div>
 
-              {/* Admission Process */}
-              <div className="space-y-8">
-                <div className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
-                  <ArrowRight size={16} />
-                  Roadmap
+              {/* Fees Table */}
+              <div id="fees" className="pt-6">
+                <h3 className="text-2xl font-bold text-primary mb-6">{university.name} Fee Structure</h3>
+                <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                  <table className="w-full text-left border-collapse text-sm">
+                    <thead>
+                      <tr className="bg-primary text-white">
+                        <th className="p-4 font-bold border-r border-primary/20">Particulars</th>
+                        <th className="p-4 font-bold">Amount (Per Year)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      <tr>
+                        <td className="p-4 font-medium border-r border-gray-200">Tuition Fees</td>
+                        <td className="p-4 bg-white">{university.fees.tuition}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-medium border-r border-gray-200">Hostel Fees</td>
+                        <td className="p-4 bg-white">{university.fees.hostel}</td>
+                      </tr>
+                      {university.fees.mess && (
+                        <tr>
+                          <td className="p-4 font-medium border-r border-gray-200">Mess Fees</td>
+                          <td className="p-4 bg-white">{university.fees.mess}</td>
+                        </tr>
+                      )}
+                      {university.fees.medicalVisa && (
+                        <tr>
+                          <td className="p-4 font-medium border-r border-gray-200">Medical/Visa/Insurance</td>
+                          <td className="p-4 bg-white">{university.fees.medicalVisa}</td>
+                        </tr>
+                      )}
+                      {university.fees.oneTime && (
+                        <tr>
+                          <td className="p-4 font-medium border-r border-gray-200">One Time Charges</td>
+                          <td className="p-4 bg-white">{university.fees.oneTime}</td>
+                        </tr>
+                      )}
+                      <tr className="bg-gray-50">
+                        <td className="p-4 font-bold border-r border-gray-200">Total Package</td>
+                        <td className="p-4 font-bold">{university.fees.total}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Admission Process</h2>
-                <div className="space-y-6 relative before:absolute before:left-4 before:top-0 before:w-0.5 before:h-full before:bg-gray-100">
-                  {university.admissionProcess.map((step, i) => (
-                    <div key={i} className="relative pl-12 flex items-start gap-4">
-                      <div className="absolute left-0 w-8 h-8 rounded-full bg-white border-2 border-primary flex items-center justify-center text-primary font-extrabold text-sm z-10 shadow-sm">
-                        {i + 1}
-                      </div>
-                      <p className="text-gray-700 font-bold text-lg pt-0.5">{step}</p>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-xs text-gray-500 italic mt-3">*Fees mentioned above are approximate and subject to change as per currency fluctuations.</p>
               </div>
 
-              {/* Required Documents */}
-              <div className="space-y-8">
-                <div className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
-                  <FileText size={16} />
-                  Documentation
+              {/* Admission Eligibility & Process */}
+              {university.admissionProcess.length > 0 && (
+                <div className="pt-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">Admission Procedure</h3>
+                  <ul className="list-decimal pl-5 space-y-2 text-gray-700 marker:font-bold marker:text-primary">
+                    {university.admissionProcess.map((step, i) => (
+                      <li key={i}>{step}</li>
+                    ))}
+                  </ul>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Required Documents</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {university.documentsRequired.map((doc, i) => (
-                    <div key={i} className="flex items-center gap-3 p-4 rounded-2xl border border-gray-100 bg-white hover:border-primary/20 transition-all">
-                      <div className="w-8 h-8 rounded-lg bg-green-50 text-green-600 flex items-center justify-center">
-                        <CheckCircle2 size={16} />
+              )}
+
+              {/* Documents Required */}
+              {university.documentsRequired.length > 0 && (
+                <div className="pt-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">Documents Required For Admission</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    {university.documentsRequired.map((doc, i) => (
+                      <li key={i}>{doc}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Why Study */}
+              {university.whyStudy.length > 0 && (
+                <div className="pt-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">Why Study MBBS At {university.name}</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    {university.whyStudy.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Student Life / Hostel */}
+              {university.hostelFacility && (
+                <div className="pt-6">
+                  <h3 className="text-2xl font-bold text-primary mb-6">Student Life At {university.name}</h3>
+                  <div className="prose max-w-none text-gray-700 space-y-4">
+                    {renderContent(university.hostelFacility)}
+                  </div>
+                </div>
+              )}
+
+              {/* Gallery Grid */}
+              {university.gallery && university.gallery.length > 0 && (
+                <div className="pt-8">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {university.gallery.map((img, i) => (
+                      <div key={i} className="relative aspect-[4/3] rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+                        <Image src={img} alt={`${university.name} gallery`} fill className="object-cover hover:scale-105 transition-transform duration-500" />
                       </div>
-                      <span className="text-gray-700 font-bold">{doc}</span>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
+              )}
+
+              {/* Pagination Placeholders */}
+              <div className="flex justify-between items-center border-t border-gray-200 pt-8 mt-12">
+                <Link href="/mbbs" className="text-primary font-bold hover:underline flex items-center gap-2">
+                  &larr; Previous Post
+                </Link>
+                <Link href="/mbbs" className="text-primary font-bold hover:underline flex items-center gap-2">
+                  Next Post &rarr;
+                </Link>
               </div>
 
             </div>
 
             {/* Right Column: Sidebar */}
-            <div className="lg:col-span-1 space-y-8">
+            <div className="lg:col-span-1">
 
-              {/* Quick Inquiry Form */}
-              <div className="bg-white border-2 border-primary/20 rounded-[2.5rem] p-8 sticky top-28 shadow-xl">
-                <h3 className="text-2xl font-extrabold text-gray-900 mb-2">Apply Now</h3>
+              <div className="sticky top-28 space-y-8 pb-12">
+                {/* Quick Inquiry Form */}
+                <div className="bg-white border-2 border-primary/20 rounded-[2.5rem] p-8 shadow-xl">
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-2">Apply Now</h3>
                 <p className="text-gray-500 text-sm mb-6">Take the first step towards your medical career. Our experts will call you back.</p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
@@ -272,15 +362,15 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
                   </div>
 
                   <div className="relative">
-                    <div 
+                    <div
                       onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
                       className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 flex items-center justify-between cursor-pointer"
                     >
                       {formData.country ? (
                         <div className="flex items-center gap-2">
-                          <img 
-                            src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`} 
-                            alt={formData.country} 
+                          <img
+                            src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`}
+                            alt={formData.country}
                             className="w-5 h-auto rounded-sm shadow-sm"
                           />
                           <span>{formData.country}</span>
@@ -304,9 +394,9 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
                               }}
                               className="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700 transition-colors"
                             >
-                              <img 
-                                src={`https://flagcdn.com/w20/${countryOption.code}.png`} 
-                                alt={countryOption.name} 
+                              <img
+                                src={`https://flagcdn.com/w20/${countryOption.code}.png`}
+                                alt={countryOption.name}
                                 className="w-5 h-auto shadow-sm rounded-sm"
                               />
                               <span>{countryOption.name}</span>
@@ -399,28 +489,42 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
                   </div>
                 </div>
               </div>
-            </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-6 md:px-12 lg:px-28">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 text-center mb-16">Campus Gallery</h2>
-          <div className="columns-1 md:columns-3 gap-6 space-y-6">
-            {university.gallery.map((img, i) => (
-              <div key={i} className="relative rounded-3xl overflow-hidden group">
-                <Image
-                  src={img}
-                  alt={`${university.name} gallery ${i + 1}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+              {/* Recent Blogs */}
+              <div className="bg-white border-t-4 border-t-primary border border-gray-100 shadow-xl rounded-2xl p-6">
+                <div className="flex items-center gap-2 text-primary font-bold mb-6 text-lg border-b border-gray-100 pb-4">
+                  Recent Blogs
+                </div>
+                <div className="space-y-4">
+                  <Link href="#" className="block group">
+                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                      Common Admission Mistakes to Avoid for MBBS in Russia
+                    </p>
+                    <span className="text-xs text-gray-400 mt-1 block">May 12, 2026</span>
+                  </Link>
+                  <Link href="#" className="block group border-t border-gray-50 pt-4">
+                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                      FMGL Regulations 2021 Explained for Indian MBBS Abroad Students
+                    </p>
+                    <span className="text-xs text-gray-400 mt-1 block">May 10, 2026</span>
+                  </Link>
+                  <Link href="#" className="block group border-t border-gray-50 pt-4">
+                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                      NMC Rules for MBBS Abroad in 2026: A Complete Breakdown
+                    </p>
+                    <span className="text-xs text-gray-400 mt-1 block">May 05, 2026</span>
+                  </Link>
+                  <Link href="#" className="block group border-t border-gray-50 pt-4">
+                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                      MBBS Fees in Russia vs Private Medical College Fees in India
+                    </p>
+                    <span className="text-xs text-gray-400 mt-1 block">May 02, 2026</span>
+                  </Link>
+                </div>
               </div>
-            ))}
+
+            </div>
+            </div>
           </div>
         </div>
       </section>
