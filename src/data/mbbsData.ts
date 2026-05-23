@@ -3063,11 +3063,29 @@ The Kursk Region is located in the central part of the Eastern European Plain an
           medicalVisa: 'USD 250 / Year',
           total: '₹14 Lakhs (Approx.)'
         },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Asian Medical Institute (AMI) is one of the most popular and well-established medical universities in Kyrgyzstan, located in Kant city near Bishkek. Founded in 2002, AMI has rapidly grown into a premier destination for Indian and international medical students. The institute offers a rigorous MBBS curriculum combining strong theoretical foundations with extensive clinical exposure in affiliated teaching hospitals.`,
+        whyStudy: [
+          'One of the most popular MBBS destinations for Indian students in Kyrgyzstan',
+          'Affordable tuition with total costs among the lowest for quality MBBS globally',
+          'Strong clinical training in AMI\'s own teaching hospital from the 3rd year',
+          'Recognized by NMC, WHO, and other major international medical bodies',
+          'Dedicated Indian student community with cultural events and Indian food facilities'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and valid passport.',
+          'Receive the official invitation/admission letter from the university.',
+          'Apply for the student visa at the Kyrgyz Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Bishkek, Kyrgyzstan.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides fully furnished hostels with 24/7 security, central heating, high-speed Wi-Fi, separate wings for boys and girls, shared kitchens, and laundry facilities. Indian food options are available on campus or nearby, making it comfortable for Indian students.`,
         gallery: []
       },
       {
@@ -3088,11 +3106,29 @@ The Kursk Region is located in the central part of the Eastern European Plain an
           medicalVisa: 'USD 250 / Year',
           total: '₹16 Lakhs (Approx.)'
         },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Jalalabad State University is a reputed state university located in Jalalabad, the third largest city of Kyrgyzstan. The university offers an internationally recognized MBBS program with a curriculum aligned to global standards. It provides a safe, multicultural campus environment with experienced faculty and modern laboratory facilities, making it an attractive option for budget-conscious international students.`,
+        whyStudy: [
+          'State-funded university with affordable tuition and low cost of living',
+          'Internationally recognized MBBS degree approved by WHO and NMC',
+          'Modern labs and clinics providing quality practical medical education',
+          'Peaceful campus environment in the scenic city of Jalalabad',
+          'Dedicated support for international and Indian students'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and valid passport.',
+          'Receive the official invitation/admission letter from the university.',
+          'Apply for the student visa at the Kyrgyz Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Bishkek, Kyrgyzstan.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides fully furnished hostels with 24/7 security, central heating, high-speed Wi-Fi, separate wings for boys and girls, shared kitchens, and laundry facilities. Indian food options are available on campus or nearby, making it comfortable for Indian students.`,
         gallery: []
       },
       {
@@ -3180,11 +3216,29 @@ Faculties at Osh State University:
           medicalVisa: 'USD 250 / Year',
           total: '₹18 Lakhs (Approx.)'
         },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `International School of Medicine (ISM), established in 2003 in Bishkek, Kyrgyzstan, is a highly regarded private medical institution. ISM is specifically designed to cater to international students, offering English-medium instruction from day one. The school maintains strong partnerships with leading hospitals in Bishkek for clinical training and is recognized by top medical councils worldwide including NMC and WHO.`,
+        whyStudy: [
+          'Exclusively designed for international students with full English-medium teaching',
+          'Located in Bishkek, the capital of Kyrgyzstan, with modern facilities',
+          'Strong clinical partnerships with premier hospitals in Bishkek for rotations',
+          'Recognized by NMC (India), WHO, and listed in the World Directory of Medical Schools',
+          'High FMGE/NExT pass rate among Indian graduates from ISM'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and valid passport.',
+          'Receive the official invitation/admission letter from the university.',
+          'Apply for the student visa at the Kyrgyz Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Bishkek, Kyrgyzstan.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides fully furnished hostels with 24/7 security, central heating, high-speed Wi-Fi, separate wings for boys and girls, shared kitchens, and laundry facilities. Indian food options are available on campus or nearby, making it comfortable for Indian students.`,
         gallery: []
       },
       {
@@ -3205,11 +3259,29 @@ Faculties at Osh State University:
           medicalVisa: 'USD 250 / Year',
           total: '₹16 Lakhs (Approx.)'
         },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Kyrgyz State Medical Academy (KSMA) is the oldest and most prestigious medical university in Kyrgyzstan, founded in 1939 in Bishkek. KSMA is considered the benchmark for medical education in Central Asia. It features a vast university-owned teaching hospital, advanced research laboratories, and a faculty of highly qualified professors. KSMA graduates are recognized and respected worldwide.`,
+        whyStudy: [
+          'The oldest and most prestigious medical university in Kyrgyzstan, established in 1939',
+          'University-owned multi-specialty teaching hospital providing direct patient exposure',
+          'Highly qualified faculty including Professors of Sciences and active researchers',
+          'Recognized by NMC, WHO, ECFMG, and listed in WDOMS',
+          'Rich academic culture and active student scientific societies'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and valid passport.',
+          'Receive the official invitation/admission letter from the university.',
+          'Apply for the student visa at the Kyrgyz Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Bishkek, Kyrgyzstan.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides fully furnished hostels with 24/7 security, central heating, high-speed Wi-Fi, separate wings for boys and girls, shared kitchens, and laundry facilities. Indian food options are available on campus or nearby, making it comfortable for Indian students.`,
         gallery: []
       },
       {
@@ -3230,11 +3302,29 @@ Faculties at Osh State University:
           medicalVisa: 'USD 250 / Year',
           total: '₹15 Lakhs (Approx.)'
         },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Kyrgyz-Russian Slavic University (KRSU) is a prestigious bilateral state university established in 1993 in Bishkek under an agreement between Kyrgyzstan and Russia. The Medical Faculty at KRSU follows both Russian and Kyrgyz educational standards, offering a globally recognized degree. The university maintains a large research library, modern laboratories, and extensive clinical bases in Bishkek's top hospitals.`,
+        whyStudy: [
+          'Prestigious bilateral Russian-Kyrgyz state university with government recognition',
+          'Medical program meets both Russian Federal and Kyrgyz national educational standards',
+          'Access to extensive clinical training bases across Bishkek\'s premier hospitals',
+          'Fully recognized by NMC, WHO, and ECFMG for global practice',
+          'Vibrant student life with sports, cultural events, and international student clubs'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and valid passport.',
+          'Receive the official invitation/admission letter from the university.',
+          'Apply for the student visa at the Kyrgyz Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Bishkek, Kyrgyzstan.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides fully furnished hostels with 24/7 security, central heating, high-speed Wi-Fi, separate wings for boys and girls, shared kitchens, and laundry facilities. Indian food options are available on campus or nearby, making it comfortable for Indian students.`,
         gallery: []
       }
     ]
