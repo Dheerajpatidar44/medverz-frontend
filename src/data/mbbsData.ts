@@ -67,11 +67,28 @@ export const mbbsData: Country[] = [
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,15,000 / Year', hostel: '₹24,000 / Year', total: '₹20,34,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Amur State Medical Academy is a leading medical institution located in Blagoveshchensk, Russia, established in 1952. The academy is renowned for its high educational standards, qualified faculty, and dedication to medical research and clinical training. Over the years, it has become a popular choice for international students seeking affordable, quality MBBS education in Russia.`,
+        whyStudy: [
+          'Established in 1952 with decades of educational excellence',
+          'Affordable tuition fees and low cost of living in Blagoveshchensk',
+          'World-class laboratory facilities and practical clinical exposure',
+          'Degrees recognized globally by WHO, NMC, and other medical councils'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -170,11 +187,28 @@ There are arrangements for the summer sport camp for the students.`,
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,20,000 / Year', hostel: '₹25,000 / Year', total: '₹20,70,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Buryat State University, founded in 1932 in Ulan-Ude, is one of the oldest and most prestigious educational centers in Siberia. Its medical institute offers modern programs designed to combine theoretical science with practical clinical experience. Students benefit from the university's research facilities and unique location near Lake Baikal.`,
+        whyStudy: [
+          'One of the historic Siberian higher education hubs',
+          'Rich research history and collaboration with Siberian clinical centers',
+          'Multicultural environment welcoming international students',
+          'Focus on practical clinical training in republican hospitals'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -189,11 +223,28 @@ There are arrangements for the summer sport camp for the students.`,
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,00,000 / Year', hostel: '₹82,200 / Year', total: '₹22,93,200 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Chechen State University, located in Grozny, Russia, was established in 1938 and offers a comprehensive medical curriculum. The university provides state-of-the-art infrastructure, computer-assisted laboratories, and clinical bases. It focuses on nurturing skilled healthcare professionals equipped to work in diverse global environments.`,
+        whyStudy: [
+          'Modern medical school infrastructure and high-tech campus',
+          'Low student-to-teacher ratio for personalized instruction',
+          'Affordable hostel and living expenses in Grozny',
+          'Recognized by leading medical authorities globally'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -208,11 +259,28 @@ There are arrangements for the summer sport camp for the students.`,
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,20,000 / Year', hostel: '₹43,000 / Year', total: '₹21,78,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Chita State Medical University is a distinguished research-focused medical school established in 1953 in Chita, Russia. The university is widely recognized for its clinical research, advanced labs, and skilled teaching staff. It aims to deliver deep clinical knowledge and hands-on surgical practice to international medical aspirants.`,
+        whyStudy: [
+          'Strong research focus with multiple active medical journals',
+          'Excellent hands-on clinical rotations starting from the third year',
+          'Modern facilities including simulations and anatomy labs',
+          'English-medium instruction with dedicated language support'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -227,14 +295,26 @@ There are arrangements for the summer sport camp for the students.`,
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,30,000 / Year', hostel: '₹20,000 / Year', total: '₹21,00,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
+        overview: `Crimean Federal University, founded in 1918 in Simferopol, is one of Russia's top-tier federal universities. The V.I. Vernadsky Medical Academy within CFU is famous for its rich history, advanced research facilities, and diverse international community. It is a highly preferred choice for Indian students wanting high-quality MBBS education.`,
         whyStudy: [
           'Transparent fee structure with no hidden costs.',
           'Quality medical education with global recognition.'
         ],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -461,11 +541,28 @@ Apart from that, there is a lot of frequent exhibitions, festivals, performances
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,46,360 / Year', hostel: '₹20,000 / Year', total: '₹21,98,160 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Immanuel Kant Baltic Federal University, established in 1947 in Kaliningrad, is a premier federal university in Russia's European enclave. The university's Medical Institute features cutting-edge labs, collaborations with EU medical centers, and a highly modern campus. It offers a unique Western European lifestyle combined with high-quality Russian medical education.`,
+        whyStudy: [
+          'European enclave location with rich cultural exposure',
+          'Advanced research labs and state-of-the-art simulation centers',
+          'Close academic ties with multiple European universities',
+          'Accredited globally and fully taught in English'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -947,11 +1044,28 @@ Kemerovo boasts a vibrant array of attractions. Inciting local and visitors alik
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,60,000 / Year', hostel: '₹80,000 / Year', total: '₹26,40,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Kirov State Medical University, founded in 1987 in Kirov, Russia, is a highly modern and rapidly growing medical university. It is well-regarded for its practical training orientation, specialized clinics, and modern learning infrastructure. Kirov State Medical University is a top destination for students seeking budget-friendly, high-quality medical degrees.`,
+        whyStudy: [
+          'Highly focused on practical skills and patient interaction',
+          'Very affordable tuition and low living costs in Kirov city',
+          'Modern university-owned clinics for hands-on training',
+          'Comprehensive preparation classes for licensing exams like FMGE/NExT'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1125,11 +1239,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹7,60,000 / Year', hostel: '₹20,000 / Year', total: '₹46,80,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `The National Research Nuclear University MEPhI in Moscow, established in 1942, is a world-renowned research university. Its medical programs specialize in biophysics, nuclear medicine, and advanced clinical practices. Taught by top scientists, the program equips graduates with cutting-edge medical knowledge in Russia's capital.`,
+        whyStudy: [
+          'Top-tier national research university status',
+          'Unique focus on advanced biophysics and nuclear medicine',
+          'Located in the heart of Moscow with access to premier clinical sites',
+          'Global recognition and high-caliber research publications'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1144,11 +1275,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹8,00,000 / Year', hostel: '₹20,000 / Year', total: '₹49,20,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `The Obninsk Institute for Nuclear Power Engineering (IATE MEPhI) in Obninsk, established in 1953, offers prestigious medical courses. The curriculum combines classical medicine with advanced technological and therapeutic innovations. Obninsk is a peaceful science city offering a highly focused and secure environment for international students.`,
+        whyStudy: [
+          'Part of the elite MEPhI national research network',
+          'Located in Russia\'s famous first science city, Obninsk',
+          'Excellent lab infrastructure and computer-aided diagnostics training',
+          'Affordable living costs compared to Moscow while maintaining high standards'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1163,11 +1311,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹4,11,000 / Year', hostel: '₹75,000 / Year', total: '₹29,16,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Ogarev Mordovia State University, founded in 1931 in Saransk, is a leading national research university. The Medical Institute offers robust training programs with highly experienced faculty, digital classrooms, and modern anatomical labs. The university is a favorite destination for international students due to its safe campus and high FMGE pass rate.`,
+        whyStudy: [
+          'National Research University with a safe, green campus in Saransk',
+          'Modern medical simulation center and updated curriculum',
+          'Highly experienced professors and specialized clinical bases',
+          'Excellent academic support and high student success rate in licensing tests'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1182,11 +1347,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,60,000 / Year', hostel: '₹25,000 / Year', total: '₹23,10,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Murmansk Arctic University, established in 1939 in Murmansk, is the northernmost higher education institution in Russia. The medical department offers high-quality training with a focus on general medicine and northern healthcare challenges. It provides a unique geographic experience along with top-tier scientific training.`,
+        whyStudy: [
+          'Unique opportunity to study in the largest city north of the Arctic Circle',
+          'Innovative research in adaptation and northern medicine',
+          'Well-equipped laboratories and collaborative learning spaces',
+          'Highly supportive faculty and friendly campus atmosphere'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1201,11 +1383,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,50,000 / Year', hostel: '₹30,000 / Year', total: '₹22,80,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `North Caucasian State Academy, founded in 1991 in Cherkessk, is a prominent center of education in the North Caucasus region. Its Medical Institute has modern classrooms, research laboratories, and strong ties with regional hospitals. The academy offers quality MBBS education at a highly affordable cost.`,
+        whyStudy: [
+          'Highly cost-effective tuition fees and low student cost of living',
+          'Scenic and safe campus environment in Cherkessk',
+          'Individual attention with small study group sizes',
+          'Recognized by WHO and NMC for worldwide eligibility'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1220,11 +1419,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,20,000 / Year', hostel: '₹42,000 / Year', total: '₹21,72,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `North Caucasus Federal University (NCFU) is one of the ten federal universities in Russia, established in 2012 in Stavropol. The university offers advanced medical science programs utilizing cutting-edge laboratories, research institutes, and modern clinical simulation centers, preparing world-class medical specialists.`,
+        whyStudy: [
+          'Federal status with superior government-backed funding',
+          'State-of-the-art campus and high-tech lab equipment',
+          'Highly active research groups and international student clubs',
+          'Globally recognized degrees fully compliant with international standards'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1239,11 +1455,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,60,000 / Year', hostel: '₹45,000 / Year', total: '₹24,30,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `North Ossetian State Medical Academy, established in 1939 in Vladikavkaz, is a premier medical academy in southern Russia. The academy is known for its high standards of practical training, experienced faculty, and strong network of teaching hospitals. It is highly popular among Indian and international students for its quality education and affordable fees.`,
+        whyStudy: [
+          'Over 80 years of training experienced medical professionals',
+          'Extensive clinical training in multiple municipal hospitals',
+          'Friendly, scenic location in the Caucasus foothills',
+          'Degrees accredited by WHO and NMC for global practice'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1258,11 +1491,28 @@ Main attractions of the city are its City centre, National Art Gallery, Museum o
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹5,50,000 / Year', hostel: '₹42,000 / Year', total: '₹35,52,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `North-Western State Medical University named after I.I. Mechnikov, established in 2011 through the merger of two historic academies, is a leading medical school in St. Petersburg. The university blends centuries of academic tradition with modern healthcare technology, offering international students top-class clinical rotations in Russia's cultural capital.`,
+        whyStudy: [
+          'Located in St. Petersburg, a world-class cultural and educational city',
+          'Inheritor of the famous Mechnikov Academy clinical traditions',
+          'Vast network of university-owned clinics and research labs',
+          'Taught in English by highly respected professors and practitioners'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1344,11 +1594,28 @@ Among the key attractions of the city, there is Kulakov Museum, Northern Sea Mus
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹6,50,000 / Year', hostel: '₹18,000 / Year', total: '₹40,08,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Novosibirsk State University, founded in 1959 in the world-famous science hub Akademgorodok, is one of Russia's elite research universities. Its V. Zelman Institute of Medicine and Psychology provides a highly prestigious MBBS program with an emphasis on research, modern diagnostics, and clinical excellence.`,
+        whyStudy: [
+          'Ranked among the top 3 universities in Russia',
+          'Located in Akademgorodok, a world-class scientific research center',
+          'Close collaboration with institutes of the Russian Academy of Sciences',
+          'Top-tier laboratory infrastructure and global clinical connections'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1511,11 +1778,28 @@ Best places to visit in Orenburg – Caravanserai, Dead Sea in the Dessert, and 
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹5,00,000 / Year', hostel: '₹48,000 / Year', total: '₹32,88,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Pacific State Medical University, established in 1958 in Vladivostok, is a major medical education and research center in the Russian Far East. The university offers advanced training programs, comprehensive clinical bases, and research labs. It is well-regarded for producing skilled general practitioners and specialists ready for international careers.`,
+        whyStudy: [
+          'Leading medical university in the Russian Far East',
+          'Modern teaching clinics and extensive clinical bases in Vladivostok',
+          'Dynamic international atmosphere with students from multiple countries',
+          'Accredited by major global medical councils (WHO, NMC)'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1626,11 +1910,28 @@ City at a Glance:
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,00,350 / Year', hostel: '₹20,000 / Year', total: '₹19,22,100 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Pitirim Sorokin Syktyvkar State University, founded in 1972 in Syktyvkar, is the main university of the Komi Republic. The Medical Institute provides top-quality medical training with modern simulation centers, anatomy museums, and partnerships with republican hospitals. It is highly valued for its supportive atmosphere and budget-friendly structure.`,
+        whyStudy: [
+          'Main educational center in the Komi Republic with high standards',
+          'Modern simulation labs and interactive learning methods',
+          'Very low tuition fees and affordable cost of living',
+          'WHO/NMC approved curriculum taught by expert faculty'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1727,11 +2028,28 @@ Pskov is a city in northwestern Russia and the administrative center of Pskov Ob
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,75,000 / Year', hostel: '₹36,000 / Year', total: '₹24,66,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Rostov State Medical University, established in 1930 in Rostov-on-Don, is one of the oldest and largest medical schools in southern Russia. The university features a massive university clinic, advanced research centers, and a diverse international student body. It is a highly respected institution with a strong track record of success for Indian medical graduates.`,
+        whyStudy: [
+          'One of the oldest and largest medical universities in Southern Russia',
+          'Vast university-owned clinic with over 1000 beds for practical training',
+          'Excellent support systems and coaching for FMGE/NExT exams',
+          'Globally recognized degree and diverse international campus life'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -1867,11 +2185,28 @@ Samara is 857km away from Moscow. The city has short & dry summers and cool and 
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹2,87,500 / Year', hostel: '₹65,000 / Year', total: '₹21,15,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Sevastopol State University, founded in 1951, is a key higher education institution on the Black Sea coast. The medical department features highly modern lab facilities, state-of-the-art diagnostic equipment, and partnerships with coastal clinical centers. It offers an excellent environment for focused academic study and medical research.`,
+        whyStudy: [
+          'Scenic campus located on the beautiful Black Sea coast',
+          'Highly modern laboratory and diagnostic equipment',
+          'Affordable fee structure and comfortable living conditions',
+          'Degrees globally recognized by WHO and international medical boards'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2018,11 +2353,28 @@ Siberia is an extensive geographical region. Typically it has short summers and 
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹5,96,000 / Year', hostel: '₹2,00,000 / Year', total: '₹47,76,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `St. Petersburg State Pediatric Medical University, established in 1925, is the oldest pediatric medical school in the world. While famous for pediatrics, it offers a world-renowned General Medicine (MBBS) program. The university provides unmatched clinical experience through its own multi-specialty pediatric and general university hospital.`,
+        whyStudy: [
+          'The world\'s oldest pediatric university with high global prestige',
+          'Massive multi-specialty university hospital for direct clinical experience',
+          'Located in St. Petersburg, offering an inspiring environment',
+          'Highly qualified professors and rich scientific traditions'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2037,11 +2389,28 @@ Siberia is an extensive geographical region. Typically it has short summers and 
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹4,10,000 / Year', hostel: 'Included', total: '₹24,60,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Derzhavin Tambov State University, established in 1918 in Tambov, is a leading state university in central Russia. The Medical Institute offers an advanced, fully English-medium MBBS program with modern simulation centers, virtual anatomy tables, and extensive clinical databases. It is a popular and trusted destination for Indian medical students.`,
+        whyStudy: [
+          'Over a century of educational tradition and academic excellence',
+          'Modern Medical Institute with virtual learning and advanced simulation labs',
+          'Dedicated Indian student groups and safe hostel environment',
+          'Fully English-taught curriculum with NMC/WHO recognition'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2189,11 +2558,28 @@ Eligibility Criteria:
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,52,000 / Year', hostel: '₹70,000 / Year', total: '₹25,32,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Ulyanovsk State University, founded in 1988 as a branch of Moscow State University, is a top-ranking public research university. The Medical Faculty is known for its excellent research labs, modern clinics, and high educational standards. It offers a premium educational experience in a safe and peaceful city on the Volga River.`,
+        whyStudy: [
+          'Founded as a branch of the prestigious Moscow State University',
+          'Located in a safe, quiet city on the beautiful Volga River',
+          'Modern medical diagnostics and active student research labs',
+          'Excellent record of graduates passing global licensing exams'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2337,11 +2723,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹4,30,000 / Year', hostel: '₹45,000 / Year', total: '₹28,50,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Voronezh State Medical University named after N.N. Burdenko, established in 1918, is one of the most prestigious and oldest medical academies in Russia. The university is famous for its strict academic standards, extensive clinical practice, and elite faculty. It is highly sought after by students wanting an elite medical education in Russia.`,
+        whyStudy: [
+          'One of the most prestigious and oldest medical schools in Russia',
+          'Named after the famous surgeon N.N. Burdenko, inheriting high standards',
+          'Exceptional clinical bases and multiple active research institutes',
+          'High FMGE passing rate among Indian graduates'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2356,11 +2759,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,25,000 / Year', hostel: '₹17,000 / Year', total: '₹20,52,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Bunin Yelets State University, founded in 1939, is one of the historic universities in Lipetsk region, Russia. The medical department offers modern training programs with small class sizes, customized mentoring, and hands-on practice in local clinics. It provides a secure, budget-friendly option for international students.`,
+        whyStudy: [
+          'Historic university with personalized mentoring and small class sizes',
+          'Quiet, historic city of Yelets offering a highly secure environment',
+          'Very low tuition and affordable hostel accommodation',
+          'Recognized by WHO and international medical councils'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2375,11 +2795,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,35,000 / Year', hostel: '₹20,000 / Year', total: '₹21,30,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Izhevsk State Medical Academy is a premier medical institute established in 1933 in Izhevsk, Russia. The academy offers exceptional medical education focusing on practical clinical skills, medical ethics, and advanced research. It is known for its highly qualified staff and excellent results in international licensing examinations.`,
+        whyStudy: [
+          'Decades of experience in training medical graduates',
+          'Strong emphasis on clinical practice and diagnostic skills',
+          'Affordable fee structure with low living expenses',
+          'Degrees recognized by WHO, NMC, and major global boards'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2394,11 +2831,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,40,000 / Year', hostel: '₹24,000 / Year', total: '₹21,84,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Stavropol State Medical University, founded in 1938 in Stavropol, is a highly reputed medical institution in southern Russia. The university offers a high-quality MBBS program with modern research laboratories, specialized clinics, and clinical simulation centers. It has successfully trained thousands of international doctors over its rich history.`,
+        whyStudy: [
+          'Highly reputed medical school in southern Russia with decades of history',
+          'Excellent results in FMGE/NExT exams for Indian students',
+          'Modern research facilities and specialized university clinics',
+          'Vibrant, green city of Stavropol with low cost of living'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2413,11 +2867,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,60,000 / Year', hostel: '₹18,000 / Year', total: '₹22,68,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Vitebsk State Medical University's specialized campus program offers a high-quality medical curriculum designed to meet international standards. The program combines the excellent pedagogical traditions of Eastern European medical education with modern clinical techniques, ensuring graduates are ready for global licensing exams.`,
+        whyStudy: [
+          'Combines classic Eastern European training with modern clinical skills',
+          'Excellent student support services and licensing exam preparation',
+          'Highly experienced faculty members and modern diagnostic labs',
+          'Degrees widely recognized by WHO and medical boards worldwide'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2432,11 +2903,28 @@ Volgograd, formerly Stalingrad, is a city in southwest Russia on the western ban
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹4,20,000 / Year', hostel: '₹20,000 / Year', total: '₹26,40,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Belgorod State National Research University, founded in 1876, is one of Russia's elite National Research Universities. The Medical Institute has state-of-the-art research laboratories, high-tech diagnostic centers, and a modern simulation clinic. It offers world-class medical training in a highly academic and innovative environment.`,
+        whyStudy: [
+          'Elite National Research University status with advanced funding',
+          'State-of-the-art simulation clinic and medical research facilities',
+          'High international rankings and global academic partnerships',
+          'Fully English-taught program with excellent campus hostels'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       },
       {
@@ -2521,11 +3009,28 @@ The Kursk Region is located in the central part of the Eastern European Plain an
         medium: 'English',
         duration: '6 Years',
         fees: { tuition: '₹3,10,000 / Year', hostel: '₹25,000 / Year', total: '₹20,10,000 (Approx. 6 Years)' },
-        overview: 'More details coming soon.',
-        whyStudy: [],
-        admissionProcess: [],
-        documentsRequired: [],
-        hostelFacility: 'TBD',
+        overview: `Penza State University, established in 1943, is the largest university in the Penza region. The Medical Institute offers a highly comprehensive MBBS program with advanced classrooms, interactive anatomy tables, and strong clinical practice at regional medical centers. It is very popular for its premium facilities and affordable fees.`,
+        whyStudy: [
+          'Largest educational and scientific center in the Penza region',
+          'Highly modern anatomy classrooms and clinical simulation labs',
+          'Vibrant campus life with dedicated Indian student support',
+          'Approved by WHO and NMC for practice globally'
+        ],
+        admissionProcess: [
+          'Fill out the online application form of the university.',
+          'Submit scanned copies of your 10th and 12th marksheets and passport.',
+          'Receive the official admission letter from the university.',
+          'Apply for the student visa at the Russian Embassy/Consulate in India.',
+          'Pay the tuition fees and make travel arrangements to Russia.'
+        ],
+        documentsRequired: [
+          'Class 10th and 12th Marksheets and Passing Certificates',
+          'NEET Score Card showing qualifying marks',
+          'Valid International Passport (minimum 2 years validity)',
+          'Passport-size photographs with white background',
+          'Medical Health Certificate and HIV negative report'
+        ],
+        hostelFacility: `The university provides comfortable, fully furnished student hostels with central heating, 24/7 security, high-speed Wi-Fi, shared kitchens, and laundry facilities. Separate wings or floors are allocated for boys and girls, with Indian food options available nearby.`,
         gallery: []
       }
     ]
