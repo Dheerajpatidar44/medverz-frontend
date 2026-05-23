@@ -19,7 +19,7 @@ const ContactForm = () => {
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
     };
 
-    try {
+    try {``
       const res = await fetch('https://medverzeducation.com/php/submit_enquiry.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

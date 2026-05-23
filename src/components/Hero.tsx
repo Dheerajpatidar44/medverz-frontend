@@ -8,18 +8,18 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     image: "https://media.istockphoto.com/id/958946262/photo/medical.jpg?s=612x612&w=0&k=20&c=7CAjVNqI5jhg47roxxI05JWacBX5FUtGIRPM5x5aa4U=",
-    title: "Your Path to Medical Excellence",
-    description: "Get access to top medical courses designed for real-world success. Learn from experts and build a strong foundation for your future."
+    title: "Study MBBS Abroad 2026",
+    description: "Start your medical journey in 2026 with admission to the world's most prestigious medical universities. Expert guidance at every step."
   },
   {
     image: "https://media.istockphoto.com/id/2150778352/photo/global-business-education-international-studies-and-language-learning-converge-in-the-iconic.jpg?s=612x612&w=0&k=20&c=FMKmSojb77RHBXcSl7NKdu8Ma4IcDeoi_wUUzZLSXP8=",
-    title: "Global Education Opportunities",
-    description: "Explore world-class universities and unlock your potential with our comprehensive study abroad programs."
+    title: "Doctors Begin Here",
+    description: "Your dream of becoming a doctor starts with the right foundation. We help you choose the best medical programs tailored to your goals."
   },
   {
     image: "https://media.istockphoto.com/id/1077219348/photo/abroad-international-europe-education-knowledge-learning-study-in-france-ideas-graduation.jpg?s=612x612&w=0&k=20&c=XAzx2gkiIVFh0Ev_K8n9xbhrlAz7JXwRt3YDdEDEjs8=",
-    title: "Empowering Future Doctors",
-    description: "Join thousands of successful students who have transformed their careers through our medical education platform."
+    title: "Work Abroad Supports",
+    description: "Career opportunities don't stop at graduation. Explore global job placements and work abroad support for medical professionals."
   }
 ];
 
@@ -42,14 +42,14 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[500px] md:h-[650px] lg:h-[750px] w-full overflow-hidden">
-      <AnimatePresence mode="wait">
+    <section className="relative h-auto aspect-[4/5] sm:h-[450px] md:h-[550px] lg:h-[600px] w-full overflow-hidden bg-gray-900">
+      <AnimatePresence initial={false}>
         <motion.div
           key={current}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           {/* Background Image */}
@@ -64,13 +64,13 @@ const Hero = () => {
           </div>
 
           {/* Content Overlay */}
-          <div className="relative h-full container mx-auto px-6 md:px-20 lg:px-28 flex items-center z-10">
-            <div className="max-w-3xl text-white">
+          <div className="relative h-full container mx-auto px-6 md:px-20 lg:px-28 flex flex-col items-center justify-center sm:pb-12 text-center z-10">
+            <div className="max-w-4xl text-white">
               <motion.h1 
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 md:mb-8"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8 drop-shadow-xl"
               >
                 {slides[current].title}
               </motion.h1>
@@ -78,7 +78,7 @@ const Hero = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-sm sm:text-xl text-white/90 mb-6 md:mb-12 max-w-xl font-medium"
+                className="text-base sm:text-lg md:text-xl text-white/95 mb-8 md:mb-12 max-w-2xl mx-auto font-medium drop-shadow-md"
               >
                 {slides[current].description}
               </motion.p>
@@ -90,7 +90,7 @@ const Hero = () => {
               >
                 <button 
                   onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
-                  className="bg-primary text-white px-6 py-3 md:px-12 md:py-5 rounded-full font-bold text-base md:text-xl hover:bg-primary-dark transition-all shadow-2xl hover:shadow-primary/20 active:scale-95"
+                  className="bg-primary text-white px-8 py-3.5 md:px-12 md:py-5 rounded-full font-bold text-lg md:text-xl hover:bg-primary-dark transition-all shadow-2xl hover:shadow-primary/20 active:scale-95"
                 >
                   Get Started
                 </button>
@@ -103,13 +103,13 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition-all hidden sm:block"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-40 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition-all hidden"
       >
         <ChevronLeft size={32} />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition-all hidden sm:block"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-40 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition-all hidden"
       >
         <ChevronRight size={32} />
       </button>

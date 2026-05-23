@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,21 +20,19 @@
   --color-primary-dark: #186f8a;
   --color-primary-light: #e8f5f8;
 
-  --animate-marquee: marquee 20s linear infinite;
+  --animate-marquee: marquee 12s linear infinite;
+  --animate-blink: blink 1.5s ease-in-out infinite;
 
   @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
   }
 }
-
 body {
   background: var(--background);
   color: var(--foreground);

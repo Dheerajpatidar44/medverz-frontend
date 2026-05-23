@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ShieldCheck, GraduationCap, Plane, HeartHandshake, Banknote, UserCheck } from 'lucide-react';
 
 const reasons = [
@@ -36,8 +39,10 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-primary-dark relative">
-      <div className="container mx-auto px-6 md:px-12 lg:px-28">
+    <section className="py-12 md:py-16 bg-primary-dark relative overflow-hidden">
+      {/* Subtle Pattern Overlay */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #fff 0.5px, transparent 0.5px)', backgroundSize: '20px 20px' }} />
+      <div className="container mx-auto px-6 md:px-12 lg:px-28 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
           {/* Left Side: Content */}
@@ -64,7 +69,7 @@ const WhyChooseUs = () => {
             {reasons.map((reason, index) => (
               <div 
                 key={index} 
-                className="bg-white p-5 rounded-2xl hover:-translate-y-1 transition-all duration-300 border border-white/10 group flex flex-col md:flex-rowitems-start gap-4"
+                className="bg-white p-5 rounded-2xl hover:-translate-y-1 transition-all duration-300 border border-white/10 group flex flex-col items-start gap-4"
               >
                 <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {reason.icon}

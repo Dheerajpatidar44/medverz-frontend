@@ -98,7 +98,7 @@ const LeadPopup = () => {
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="relative bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden"
+            className="relative bg-white w-full max-w-sm rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Close Button */}
             <button
@@ -108,22 +108,22 @@ const LeadPopup = () => {
               <X size={24} />
             </button>
 
-            <div className="p-6 md:p-8">
+            <div className="p-5 md:p-6">
               {/* Header */}
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl md:text-2xl font-bold text-gray-800">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-lg md:text-xl font-bold text-gray-800">
                   Apply for MBBS in Abroad
                 </h2>
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <div>
                   <input
                     type="text"
                     required
                     placeholder="Name *"
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
@@ -134,22 +134,22 @@ const LeadPopup = () => {
                     type="email"
                     required
                     placeholder="E-mail *"
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
                 </div>
 
                 <div className="relative">
-                  <div 
+                  <div
                     onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 flex items-center justify-between cursor-pointer"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 flex items-center justify-between cursor-pointer"
                   >
                     {formData.country ? (
                       <div className="flex items-center gap-2">
-                        <img 
-                          src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`} 
-                          alt={formData.country} 
+                        <img
+                          src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`}
+                          alt={formData.country}
                           className="w-5 h-auto rounded-sm shadow-sm"
                         />
                         <span>{formData.country}</span>
@@ -173,9 +173,9 @@ const LeadPopup = () => {
                             }}
                             className="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700 transition-colors"
                           >
-                            <img 
-                              src={`https://flagcdn.com/w20/${country.code}.png`} 
-                              alt={country.name} 
+                            <img
+                              src={`https://flagcdn.com/w20/${country.code}.png`}
+                              alt={country.name}
                               className="w-5 h-auto shadow-sm rounded-sm"
                             />
                             <span>{country.name}</span>
@@ -189,7 +189,7 @@ const LeadPopup = () => {
                 <div className="relative">
                   <select
                     required
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-500 appearance-none"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-500 appearance-none"
                     value={formData.course}
                     onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                   >
@@ -206,7 +206,7 @@ const LeadPopup = () => {
                     type="text"
                     required
                     placeholder="Select Your State"
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                     value={formData.state}
                     onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                   />
@@ -220,7 +220,7 @@ const LeadPopup = () => {
                     type="text"
                     required
                     placeholder="Select Your City"
-                    className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                    className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                   />
@@ -235,7 +235,7 @@ const LeadPopup = () => {
                       type="text"
                       readOnly
                       value="+91"
-                      className="w-full px-2 py-3 rounded-md bg-gray-50 border border-gray-100 text-center text-sm text-gray-500 outline-none"
+                      className="w-full px-2 py-2.5 rounded-md bg-gray-50 border border-gray-100 text-center text-sm text-gray-500 outline-none"
                     />
                   </div>
                   <div className="flex-1">
@@ -243,7 +243,7 @@ const LeadPopup = () => {
                       type="tel"
                       required
                       placeholder="Phone Number"
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                      className="w-full px-4 py-2.5 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />

@@ -14,36 +14,43 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-50 text-slate-800 pt-24 pb-12 border-t border-slate-200">
+    <footer className="bg-slate-50 text-slate-800 pt-10 md:pt-24 pb-12 border-t border-slate-200">
       <div className="container mx-auto px-6 md:px-12 lg:px-28">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
           {/* Column 1: Brand */}
-          <div className="space-y-6">
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1 space-y-6">
             <div className="flex items-center gap-2">
-              <Image src="/medverz.png" alt="Medverz Logo" width={150} height={40} className="object-contain" />
+              <Image 
+                src="/medverz.png" 
+                alt="Medverz Logo" 
+                width={150} 
+                height={40} 
+                style={{ height: 'auto' }} 
+                className="w-28 sm:w-36 md:w-[150px] h-auto object-contain" 
+              />
             </div>
             <p className="text-slate-600 text-sm leading-relaxed">
               Medverz Education is dedicated to providing affordable MBBS admissions worldwide. We bridge the gap between your dreams and a global medical career.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <a href="https://www.facebook.com/share/1LU3WduLK8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.facebook}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.facebook} /></svg>
               </a>
               <a href="https://www.instagram.com/medverz.education?igsh=MW9wM2pkOGF4YTJ1YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.instagram}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.instagram} /></svg>
               </a>
               <a href="https://x.com/medverz?s=21" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.twitter}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.twitter} /></svg>
               </a>
               <a href="https://www.linkedin.com/company/medverz-education/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.linkedin}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.linkedin} /></svg>
               </a>
               <a href="https://pin.it/AW1hLoCoC" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.pinterest}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.pinterest} /></svg>
               </a>
               <a href="http://yt.openinapp.co/yqz80" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.youtube}/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-slate-500 group-hover:text-white"><path d={socialIcons.youtube} /></svg>
               </a>
             </div>
           </div>
@@ -51,11 +58,11 @@ const Footer = () => {
 
 
           {/* Column 2: Quick Links */}
-          <div className="space-y-6">
+          <div className="col-span-1 sm:col-span-1 lg:col-span-1 space-y-6">
             <h4 className="text-lg font-bold">Quick Links</h4>
             <ul className="space-y-4 text-slate-600 text-sm">
               <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/about/overview" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/team" className="hover:text-primary transition-colors">Our Team</Link></li>
               <li><Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
               <li><Link href="/resources" className="hover:text-primary transition-colors">Resources</Link></li>
@@ -64,7 +71,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Destinations */}
-          <div className="space-y-6">
+          <div className="col-span-1 sm:col-span-1 lg:col-span-1 space-y-6">
             <h4 className="text-lg font-bold">Destinations</h4>
             <ul className="space-y-4 text-slate-600 text-sm">
               <li><Link href="/mbbs/russia" className="hover:text-primary transition-colors">Study in Russia</Link></li>
@@ -76,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Contact */}
-          <div className="space-y-6">
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1 space-y-6">
             <h4 className="text-lg font-bold">Contact Us</h4>
             <ul className="space-y-4 text-slate-600 text-sm">
               <li className="flex items-start gap-3">

@@ -7,7 +7,8 @@ import { motion } from 'framer-motion';
 
 const ExpertiseGrid = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-16 bg-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-50 to-transparent opacity-50" />
       <div className="container mx-auto px-6 md:px-12 lg:px-28">
         {/* Header */}
         <div className="mb-12">
@@ -28,7 +29,7 @@ const ExpertiseGrid = () => {
             {/* Study Abroad Card */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="relative h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
+              className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
               <Image 
                 src="/study-abroad.png" 
@@ -48,7 +49,7 @@ const ExpertiseGrid = () => {
             {/* Why Choose Us Card */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="relative h-1/2 bg-[#F8FAFC] rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-center overflow-hidden"
+              className="relative h-auto md:h-1/2 bg-[#F8FAFC] rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm flex flex-col justify-center overflow-hidden"
             >
               {/* Background Globe Watermark */}
               <div className="absolute right-[-20px] bottom-[-20px] opacity-5">
@@ -101,7 +102,7 @@ const ExpertiseGrid = () => {
           <div className="md:col-span-3 h-full">
             <motion.div 
               whileHover={{ y: -5 }}
-              className="relative h-full rounded-3xl overflow-hidden group cursor-pointer shadow-lg min-h-[400px]"
+              className="relative h-[300px] md:h-full rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
               <Image 
                 src="/work-permit.png" 
@@ -124,7 +125,7 @@ const ExpertiseGrid = () => {
             {/* Tourist Visa Card */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="relative h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
+              className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
               <Image 
                 src="/tourist-visa.png" 
@@ -144,7 +145,7 @@ const ExpertiseGrid = () => {
             {/* Immigration & PR Card */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="relative h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
+              className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
               <Image 
                 src="/immigration.png" 

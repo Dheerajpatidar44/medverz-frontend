@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Target, Users, BookText, Award } from 'lucide-react';
+import { Target, Users, BookText, Award, ShieldCheck, CheckCircle2, HeartHandshake } from 'lucide-react';
 
 const StatCounter = ({ end, label, suffix = "" }: { end: number, label: string, suffix?: string }) => {
   return (
@@ -28,32 +28,29 @@ const StatCounter = ({ end, label, suffix = "" }: { end: number, label: string, 
 
 const AboutSection = () => {
   return (
-    <section className="py-16 md:py-28 bg-white overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 lg:px-28">
-        <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-20">
+    <section className="py-12 md:py-16 bg-white overflow-hidden relative">
+      {/* Creative Blobs */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      
+      <div className="container mx-auto px-6 md:px-12 lg:px-28 relative z-10">
+        <div className="flex flex-col lg:flex-row lg:items-stretch items-center gap-12 md:gap-20">
 
           {/* Left Side: Image and Badge */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative flex-1 w-full max-w-lg mx-auto lg:mx-0"
-          >
+          <div className="relative flex-1 w-full max-w-lg mx-auto lg:mx-0 flex flex-col justify-between">
             {/* Background Geometric Pattern */}
             <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary-light rounded-full opacity-30 blur-3xl -z-10" />
 
-            <div className="relative z-10 rounded-3xl overflow-hidden">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-lg flex-grow min-h-[320px] md:min-h-[450px] lg:min-h-[400px]">
               <Image
                 src="/images/office/office4.jpeg"
                 alt="Medverz Education Office"
-                width={500}
-                height={600}
-                className="w-full h-auto transform hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform hover:scale-105 transition-transform duration-700"
                 priority
               />
               {/* Floating Badge */}
-              <div className="absolute bottom-6 right-6 bg-white p-4 rounded-2xl flex items-center gap-4 border border-gray-100">
+              <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl flex items-center gap-4 border border-gray-100/50 shadow-md">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
                   <Award size={24} />
                 </div>
@@ -63,16 +60,28 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+
+            {/* 3 Badges under the image */}
+            <div className="grid grid-cols-3 gap-3 mt-6 shrink-0">
+              {[
+                { icon: ShieldCheck, title: "100% Safe", desc: "Admissions" },
+                { icon: CheckCircle2, title: "NMC & WHO", desc: "Guidelines" },
+                { icon: HeartHandshake, title: "End-to-End", desc: "Care Support" }
+              ].map((badge, idx) => (
+                <div key={idx} className="bg-slate-50/80 border border-slate-100/50 rounded-2xl p-3 flex flex-col items-center text-center hover:shadow-md transition-all duration-300 group">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <badge.icon size={20} className="stroke-[2]" />
+                  </div>
+                  <p className="text-xs font-black text-gray-900 leading-tight">{badge.title}</p>
+                  <p className="text-[10px] font-bold text-gray-500 mt-0.5 leading-none">{badge.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
           {/* Right Side: Content */}
           <div className="flex-1 space-y-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
+            <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary-light px-4 py-1.5 rounded-full text-primary font-bold text-xs uppercase tracking-[0.15em]">
                 <Target size={14} />
                 About Medverz Education
@@ -86,7 +95,7 @@ const AboutSection = () => {
                 with world-class medical universities across Russia, Georgia, and beyond.
                 With <strong>1000+ students placed abroad since 2022</strong>, we are committed to excellence and transparency.
               </p>
-            </motion.div>
+            </div>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-2 gap-4">

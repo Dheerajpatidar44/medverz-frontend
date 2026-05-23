@@ -9,7 +9,8 @@ import { Globe2, GraduationCap, Calendar, Banknote, ShieldCheck, ArrowRight, Clo
 
 const CourseGrid = () => {
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-12 md:py-16 bg-[#FAFBFF] relative overflow-hidden">
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="container mx-auto px-6 md:px-12 lg:px-28">
         
         {/* Header */}
@@ -35,12 +36,8 @@ const CourseGrid = () => {
         {/* Destination Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mbbsData.map((dest, index) => (
-            <motion.div 
+            <div 
               key={dest.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
               className="group"
             >
               <Link href={`/mbbs/${dest.slug}`} className="block bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 transition-all duration-500 relative h-full">
@@ -105,7 +102,7 @@ const CourseGrid = () => {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
 

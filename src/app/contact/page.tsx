@@ -15,127 +15,127 @@ const ContactPage = () => {
 
   return (
     <main className="min-h-screen bg-white">
-        {/* 1. Hero Section */}
-        <PageHero 
-          title="Get in Touch" 
-          subtitle="Have questions about our courses or need assistance? We're here to help you every step of the way."
-          backgroundImage="/contact-hero.png"
-        />
+      {/* 1. Hero Section */}
+      <PageHero
+        title="Get in Touch"
+        subtitle="Have questions about our courses or need assistance? We're here to help you every step of the way."
+        backgroundImage="/contact-hero.png"
+      />
 
-        {/* 2. Contact Info & Form Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-6 md:px-12 lg:px-28">
-            <div className="flex flex-col lg:flex-row gap-16">
-              {/* Contact Information */}
-              <div className="lg:w-1/3 space-y-12">
-                <div>
-                  <span className="text-primary font-bold tracking-widest text-sm uppercase">Contact Us</span>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6">
-                    We'd Love to Hear From You
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    Whether you're a prospective student or an organization, our team is ready to provide the information you need.
-                  </p>
-                </div>
+      {/* 2. Contact Info & Form Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 md:px-12 lg:px-28">
+          <div className="flex flex-col lg:flex-row gap-16">
+            {/* Contact Information */}
+            <div className="lg:w-1/3 space-y-12">
+              <div>
+                <span className="text-primary font-bold tracking-widest text-sm uppercase">Contact Us</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6">
+                  We'd Love to Hear From You
+                </h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Whether you're a prospective student or an organization, our team is ready to provide the information you need.
+                </p>
+              </div>
 
-                <div className="space-y-8">
-                  <div className="flex items-start gap-5">
-                    <div className="bg-primary/10 p-4 rounded-2xl text-primary">
-                      <MapPin size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-900">Our Location</h4>
-                      <p className="text-gray-600">SHOP NO F-7, FIRST FLOOR, PROPERTY NO 156/3, RIYAZ COMPLEX, BATLA HOUSE CHOWK, BALTA HOUSE, OKHLA, JAMIA NAGAR, New Delhi - 110025</p>
-                      <a 
-                        href="https://maps.app.goo.gl/S6YgasTMoGqXZDz78" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary font-bold text-sm hover:underline mt-2 inline-block"
-                      >
-                        View on Google Maps →
-                      </a>
-                    </div>
+              <div className="space-y-8">
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 p-4 rounded-2xl text-primary">
+                    <MapPin size={24} />
                   </div>
-
-                  <div className="flex items-start gap-5">
-                    <div className="bg-primary/10 p-4 rounded-2xl text-primary">
-                      <Phone size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-900">Phone Number</h4>
-                      <p className="text-gray-600">+91 90701 07030 (Office)</p>
-                      <p className="text-gray-600">+91 99911 06101 (Helpline)</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-5">
-                    <div className="bg-primary/10 p-4 rounded-2xl text-primary">
-                      <Mail size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-900">Email Address</h4>
-                      <p className="text-gray-600">info@medverzeducation.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-5">
-                    <div className="bg-primary/10 p-4 rounded-2xl text-primary">
-                      <Clock size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-900">Working Hours</h4>
-                      <p className="text-gray-600">Mon - Fri: 9:00 AM - 9:00 PM</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
-                    </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">Our Location</h4>
+                    <p className="text-gray-600">SHOP NO F-7, FIRST FLOOR, PROPERTY NO 156/3, RIYAZ COMPLEX, BATLA HOUSE CHOWK, BALTA HOUSE, OKHLA, JAMIA NAGAR, New Delhi - 110025</p>
+                    <a
+                      href="https://maps.app.goo.gl/S6YgasTMoGqXZDz78"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-bold text-sm hover:underline mt-2 inline-block"
+                    >
+                      View on Google Maps →
+                    </a>
                   </div>
                 </div>
 
-                <div className="pt-8 border-t border-gray-100">
-                  <h4 className="text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
-                  <div className="flex gap-4">
-                    <a href="https://www.facebook.com/share/1LU3WduLK8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.facebook}/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/medverz.education?igsh=MW9wM2pkOGF4YTJ1YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.instagram}/></svg>
-                    </a>
-                    <a href="https://x.com/medverz?s=21" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.twitter}/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/company/medverz-education/" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.linkedin}/></svg>
-                    </a>
-                    <a href="https://pin.it/AW1hLoCoC" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.pinterest}/></svg>
-                    </a>
-                    <a href="http://yt.openinapp.co/yqz80" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.youtube}/></svg>
-                    </a>
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 p-4 rounded-2xl text-primary">
+                    <Phone size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">Phone Number</h4>
+                    <p className="text-gray-600">+91 90701 07030 (Office)</p>
+                    <p className="text-gray-600">+91 99911 06101 (Helpline)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 p-4 rounded-2xl text-primary">
+                    <Mail size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">Email Address</h4>
+                    <p className="text-gray-600">info@medverzeducation.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 p-4 rounded-2xl text-primary">
+                    <Clock size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">Working Hours</h4>
+                    <p className="text-gray-600">Mon - Fri: 9:00 AM - 9:00 PM</p>
+                    <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
+                    <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
 
-              {/* Contact Form */}
-              <div className="lg:w-2/3">
-                <ContactForm />
+              <div className="pt-8 border-t border-gray-100">
+                <h4 className="text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
+                <div className="flex gap-4">
+                  <a href="https://www.facebook.com/share/1LU3WduLK8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.facebook} /></svg>
+                  </a>
+                  <a href="https://www.instagram.com/medverz.education?igsh=MW9wM2pkOGF4YTJ1YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.instagram} /></svg>
+                  </a>
+                  <a href="https://x.com/medverz?s=21" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.twitter} /></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/medverz-education/" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.linkedin} /></svg>
+                  </a>
+                  <a href="https://pin.it/AW1hLoCoC" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.pinterest} /></svg>
+                  </a>
+                  <a href="http://yt.openinapp.co/yqz80" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-3 rounded-xl text-gray-400 hover:bg-primary hover:text-white transition-all">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={socialIcons.youtube} /></svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* 3. Map Section */}
-        <section className="h-[450px] w-full bg-gray-100  ">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.560800178317!2d77.2847223!3d28.5657145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3fcadf2c2df%3A0xea01ab94ea73219c!2sMEDVERZ%20EDUCATION!5e1!3m2!1sen!2sin!4v1778484510163!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen={true} 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </section>
+            {/* Contact Form */}
+            <div className="lg:w-2/3">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Map Section */}
+      <section className="h-[450px] w-full bg-gray-100  ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.560800178317!2d77.2847223!3d28.5657145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3fcadf2c2df%3A0xea01ab94ea73219c!2sMEDVERZ%20EDUCATION!5e1!3m2!1sen!2sin!4v1778484510163!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
   );
 };

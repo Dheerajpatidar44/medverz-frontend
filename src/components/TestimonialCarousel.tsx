@@ -24,7 +24,8 @@ const doubledTestimonials = [...testimonials, ...testimonials];
 
 const TestimonialCarousel = () => {
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section className="py-12 md:py-16 bg-gray-50 overflow-hidden relative">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
       <div className="container mx-auto px-6 mb-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

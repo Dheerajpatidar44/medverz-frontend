@@ -1,84 +1,65 @@
 import React from 'react';
-import { Sparkle, Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
+import { Phone, Mail } from 'lucide-react';
 
 const TopStrip = () => {
   const marqueeText = "NEET 2025 Admissions Open • Expert Counseling for Medical Aspirants • Top Medical Colleges Guidance • Career Seminars Every Sunday • Register Now for Free Consultation • ";
 
-  // Social Icons SVG Paths
-  const icons = {
-    facebook: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z",
-    instagram: "M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.885 5.885 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.898 5.898 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.89 5.89 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.584-.071 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.584-.015-4.85-.071c-1.17-.055-1.805-.249-2.227-.415a3.746 3.746 0 01-1.382-.896 3.746 3.746 0 01-.896-1.382c-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.016-3.584.071-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4.162 4.162 0 110-8.324A4.162 4.162 0 0112 16zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z",
-    twitter: "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298l13.312 17.404z",
-    youtube: "M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
-    linkedin: "M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.7h-3.56V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z",
-    pinterest: "M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.992 3.992-.283 1.194.598 2.169 1.775 2.169 2.13 0 3.768-2.247 3.768-5.49 0-2.87-2.061-4.876-5.008-4.876-3.41 0-5.412 2.559-5.412 5.202 0 1.03.397 2.135.892 2.735a.343.343 0 0 1 .08.333c-.097.403-.314 1.278-.356 1.455a.3.3 0 0 1-.212.181c-1.393-.648-2.263-2.685-2.263-4.321 0-3.518 2.555-6.75 7.375-6.75 3.87 0 6.878 2.758 6.878 6.444 0 3.845-2.423 6.94-5.786 6.94-1.13 0-2.191-.587-2.554-1.278l-.695 2.645c-.251.967-.93 2.18-1.385 2.914C9.37 23.791 10.638 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"
-  };
-
   return (
-    <div className="bg-white text-primary py-2.5 border-b border-gray-100 w-full relative overflow-hidden shadow-sm">
-      <div className="container mx-auto px-2 sm:px-6 md:px-12 flex flex-wrap sm:flex-nowrap items-center justify-between gap-y-2 sm:gap-y-0 gap-x-1 sm:gap-4">
+    <div className="bg-white text-primary pt-3 pb-2 sm:py-2 border-b border-gray-100 w-full relative overflow-hidden shadow-sm">
+      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
         
-        {/* Left: Contact Info */}
-        <div className="flex items-center gap-1 sm:gap-4 shrink-0 z-10 order-1">
-          <div className="flex items-center gap-1.5">
-            <Phone className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] text-primary fill-primary/20" />
-            <a href="tel:+919070107030" className="text-[10px] sm:text-[11px] md:text-[13px] font-bold tracking-wider uppercase hover:text-primary-dark transition-all duration-300 whitespace-nowrap">
-              <span className="text-gray-400">Student Helpline: </span>+91 90701 07030
+        {/* Left: Phone */}
+        <div className="flex items-center justify-center md:justify-start w-full md:w-1/4 relative md:pr-6 py-1">
+          <div className="flex items-center gap-2">
+            <Phone className="w-4 h-4 text-primary fill-primary/10" />
+            <a href="tel:+919070107030" className="text-gray-700 hover:text-primary font-semibold text-sm lg:text-base transition-colors whitespace-nowrap">
+              +91 90701 07030
             </a>
           </div>
-          <div className="hidden sm:flex items-center gap-1.5 border-l border-gray-200 pl-3 sm:pl-4">
-            <Mail className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] text-primary" />
-            <a href="mailto:info@medverzeducation.com" className="text-[10px] sm:text-[11px] md:text-[13px] font-bold tracking-wider hover:text-primary-dark transition-all duration-300">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-8 bg-gray-200 rotate-[15deg] hidden md:block"></div>
+        </div>
+
+        {/* Center: Latest Updates Badge + Text */}
+        <div className="flex flex-col items-center justify-center w-full md:w-2/4 py-1">
+          {/* Badge */}
+          <div className="bg-primary text-white text-[10px] md:text-xs font-black px-4 py-1.5 rounded flex items-center justify-center tracking-wider mb-1 shadow-sm">
+            <div className="relative flex h-2 w-2 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </div>
+            LATEST UPDATES
+          </div>
+          
+          {/* Announcement scrolling marquee */}
+          <Link href="/gallery/photos" className="w-full overflow-hidden relative py-0.5 hover:opacity-80 transition-opacity">
+            <div className="flex whitespace-nowrap animate-marquee">
+              <div className="flex items-center gap-6 px-4 shrink-0">
+                <span className="text-[12px] md:text-[13px] font-extrabold tracking-wide text-primary">
+                  {marqueeText}
+                </span>
+              </div>
+              <div className="flex items-center gap-6 px-4 shrink-0">
+                <span className="text-[12px] md:text-[13px] font-extrabold tracking-wide text-primary">
+                  {marqueeText}
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        {/* Right: Email */}
+        <div className="flex items-center justify-center md:justify-end w-full md:w-1/4 relative md:pl-6 py-1">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[1px] h-8 bg-gray-200 rotate-[15deg] hidden md:block"></div>
+          <div className="flex items-center gap-2">
+            <Mail className="w-4 h-4 text-primary" />
+            <a href="mailto:info@medverzeducation.com" className="text-gray-700 hover:text-primary font-bold text-sm lg:text-base transition-colors whitespace-nowrap">
               info@medverzeducation.com
             </a>
           </div>
+          {/* Far Right Divider */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-8 bg-gray-200 rotate-[15deg] hidden md:block"></div>
         </div>
-
-        {/* Center: Marquee */}
-        <div className="w-full sm:flex-1 overflow-hidden relative mx-0 sm:mx-4 bg-primary/5 py-1.5 rounded-full border border-primary/10 order-3 sm:order-2 mt-1 sm:mt-0">
-          <div className="flex whitespace-nowrap animate-marquee">
-            <div className="flex items-center gap-6 px-4 shrink-0">
-              <div className="flex items-center gap-3">
-                <Sparkle className="w-[12px] h-[12px] sm:w-[14px] sm:h-[14px] text-primary fill-primary" />
-                <span className="text-[9px] sm:text-[11px] md:text-[13px] font-extrabold tracking-widest uppercase text-primary">
-                  {marqueeText}
-                </span>
-              </div>
-            </div>
-            {/* Duplicate for seamless loop */}
-            <div className="flex items-center gap-6 px-4 shrink-0">
-              <div className="flex items-center gap-3">
-                <Sparkle className="w-[12px] h-[12px] sm:w-[14px] sm:h-[14px] text-primary fill-primary" />
-                <span className="text-[9px] sm:text-[11px] md:text-[13px] font-extrabold tracking-widest uppercase text-primary">
-                  {marqueeText}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Right: Social Icons */}
-        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0 z-10 order-2 sm:order-3">
-          <a href="https://www.facebook.com/share/1LU3WduLK8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-[#1877F2] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.facebook} /></svg>
-          </a>
-          <a href="https://www.instagram.com/medverz.education?igsh=MW9wM2pkOGF4YTJ1YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-[#E4405F] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.instagram} /></svg>
-          </a>
-          <a href="https://x.com/medverz?s=21" target="_blank" rel="noopener noreferrer" className="text-[#000000] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.twitter} /></svg>
-          </a>
-          <a href="https://www.linkedin.com/company/medverz-education/" target="_blank" rel="noopener noreferrer" className="text-[#0A66C2] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.linkedin} /></svg>
-          </a>
-          <a href="https://pin.it/AW1hLoCoC" target="_blank" rel="noopener noreferrer" className="text-[#BD081C] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.pinterest} /></svg>
-          </a>
-          <a href="http://yt.openinapp.co/yqz80" target="_blank" rel="noopener noreferrer" className="text-[#FF0000] hover:scale-125 transition-all duration-300">
-            <svg className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px]" viewBox="0 0 24 24" fill="currentColor"><path d={icons.youtube} /></svg>
-          </a>
-        </div>
-
 
       </div>
     </div>

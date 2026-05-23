@@ -153,7 +153,7 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
 
             {/* Left Column: Details */}
             <div className="lg:col-span-2 space-y-12">
-              
+
               {/* Image Placeholder / Banner */}
               <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-sm mb-12">
                 <Image
@@ -337,193 +337,193 @@ const UniversityContent: React.FC<UniversityContentProps> = ({ university, count
                 {/* Quick Inquiry Form */}
                 <div className="bg-white border-2 border-primary/20 rounded-[2.5rem] p-8 shadow-xl">
                   <h3 className="text-2xl font-extrabold text-gray-900 mb-2">Apply Now</h3>
-                <p className="text-gray-500 text-sm mb-6">Take the first step towards your medical career. Our experts will call you back.</p>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Name *"
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    />
-                  </div>
-
-                  <div>
-                    <input
-                      type="email"
-                      required
-                      placeholder="E-mail *"
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    />
-                  </div>
-
-                  <div className="relative">
-                    <div
-                      onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 flex items-center justify-between cursor-pointer"
-                    >
-                      {formData.country ? (
-                        <div className="flex items-center gap-2">
-                          <img
-                            src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`}
-                            alt={formData.country}
-                            className="w-5 h-auto rounded-sm shadow-sm"
-                          />
-                          <span>{formData.country}</span>
-                        </div>
-                      ) : (
-                        <span className="text-gray-500">Select Your Country</span>
-                      )}
-                      <ChevronDown size={16} className={`text-gray-400 transition-transform ${isCountryDropdownOpen ? 'rotate-180' : ''}`} />
-                    </div>
-
-                    {isCountryDropdownOpen && (
-                      <>
-                        <div className="fixed inset-0 z-[1001]" onClick={() => setIsCountryDropdownOpen(false)} />
-                        <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-100 rounded-md shadow-lg z-[1002] max-h-48 overflow-y-auto">
-                          {countriesList.map((countryOption) => (
-                            <div
-                              key={countryOption.code}
-                              onClick={() => {
-                                setFormData({ ...formData, country: countryOption.name });
-                                setIsCountryDropdownOpen(false);
-                              }}
-                              className="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700 transition-colors"
-                            >
-                              <img
-                                src={`https://flagcdn.com/w20/${countryOption.code}.png`}
-                                alt={countryOption.name}
-                                className="w-5 h-auto shadow-sm rounded-sm"
-                              />
-                              <span>{countryOption.name}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                  </div>
-
-                  <div className="relative">
-                    <select
-                      required
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-500 appearance-none"
-                      value={formData.course}
-                      onChange={(e) => setFormData({ ...formData, course: e.target.value })}
-                    >
-                      <option value="">Select Course</option>
-                      <option value="MBBS">MBBS</option>
-                    </select>
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                      <ChevronDown size={16} />
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <input
-                      type="text"
-                      required
-                      placeholder="Select Your State"
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
-                      value={formData.state}
-                      onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                    />
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                      <ChevronDown size={16} />
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <input
-                      type="text"
-                      required
-                      placeholder="Select Your City"
-                      className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
-                      value={formData.city}
-                      onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    />
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                      <ChevronDown size={16} />
-                    </div>
-                  </div>
-
-                  <div className="flex gap-2">
-                    <div className="w-16 flex-shrink-0">
+                  <p className="text-gray-500 text-sm mb-6">Take the first step towards your medical career. Our experts will call you back.</p>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
                       <input
                         type="text"
-                        readOnly
-                        value="+91"
-                        className="w-full px-2 py-3 rounded-md bg-gray-50 border border-gray-100 text-center text-sm text-gray-500 outline-none"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <input
-                        type="tel"
                         required
-                        placeholder="Phone Number"
+                        placeholder="Name *"
                         className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       />
                     </div>
-                  </div>
 
-                  <div className="pt-2">
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-[#1e4e79] text-white py-3.5 rounded-md font-bold text-sm hover:bg-[#153b5e] transition-all flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-primary/20 mt-2 active:scale-95"
-                    >
-                      {isSubmitting ? 'SUBMITTING...' : 'SUBMIT NOW'}
-                    </button>
-                  </div>
-                </form>
-                <div className="mt-8 pt-8 border-t border-gray-50 text-center">
-                  <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-2">Hostel & Food</p>
-                  <div className="flex items-center justify-center gap-2 text-primary font-bold">
-                    <Home size={18} />
-                    Indian Food Available
+                    <div>
+                      <input
+                        type="email"
+                        required
+                        placeholder="E-mail *"
+                        className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <div
+                        onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
+                        className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700 flex items-center justify-between cursor-pointer"
+                      >
+                        {formData.country ? (
+                          <div className="flex items-center gap-2">
+                            <img
+                              src={`https://flagcdn.com/w20/${countriesList.find(c => c.name === formData.country)?.code}.png`}
+                              alt={formData.country}
+                              className="w-5 h-auto rounded-sm shadow-sm"
+                            />
+                            <span>{formData.country}</span>
+                          </div>
+                        ) : (
+                          <span className="text-gray-500">Select Your Country</span>
+                        )}
+                        <ChevronDown size={16} className={`text-gray-400 transition-transform ${isCountryDropdownOpen ? 'rotate-180' : ''}`} />
+                      </div>
+
+                      {isCountryDropdownOpen && (
+                        <>
+                          <div className="fixed inset-0 z-[1001]" onClick={() => setIsCountryDropdownOpen(false)} />
+                          <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-100 rounded-md shadow-lg z-[1002] max-h-48 overflow-y-auto">
+                            {countriesList.map((countryOption) => (
+                              <div
+                                key={countryOption.code}
+                                onClick={() => {
+                                  setFormData({ ...formData, country: countryOption.name });
+                                  setIsCountryDropdownOpen(false);
+                                }}
+                                className="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700 transition-colors"
+                              >
+                                <img
+                                  src={`https://flagcdn.com/w20/${countryOption.code}.png`}
+                                  alt={countryOption.name}
+                                  className="w-5 h-auto shadow-sm rounded-sm"
+                                />
+                                <span>{countryOption.name}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
+
+                    <div className="relative">
+                      <select
+                        required
+                        className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-500 appearance-none"
+                        value={formData.course}
+                        onChange={(e) => setFormData({ ...formData, course: e.target.value })}
+                      >
+                        <option value="">Select Course</option>
+                        <option value="MBBS">MBBS</option>
+                      </select>
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                        <ChevronDown size={16} />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <input
+                        type="text"
+                        required
+                        placeholder="Select Your State"
+                        className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                        value={formData.state}
+                        onChange={(e) => setFormData({ ...formData, state: e.target.value })}
+                      />
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                        <ChevronDown size={16} />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <input
+                        type="text"
+                        required
+                        placeholder="Select Your City"
+                        className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                        value={formData.city}
+                        onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                      />
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                        <ChevronDown size={16} />
+                      </div>
+                    </div>
+
+                    <div className="flex gap-2">
+                      <div className="w-16 flex-shrink-0">
+                        <input
+                          type="text"
+                          readOnly
+                          value="+91"
+                          className="w-full px-2 py-3 rounded-md bg-gray-50 border border-gray-100 text-center text-sm text-gray-500 outline-none"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <input
+                          type="tel"
+                          required
+                          placeholder="Phone Number"
+                          className="w-full px-4 py-3 rounded-md bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm text-gray-700"
+                          value={formData.phone}
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="pt-2">
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full bg-[#1e4e79] text-white py-3.5 rounded-md font-bold text-sm hover:bg-[#153b5e] transition-all flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-primary/20 mt-2 active:scale-95"
+                      >
+                        {isSubmitting ? 'SUBMITTING...' : 'SUBMIT NOW'}
+                      </button>
+                    </div>
+                  </form>
+                  <div className="mt-8 pt-8 border-t border-gray-50 text-center">
+                    <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-2">Hostel & Food</p>
+                    <div className="flex items-center justify-center gap-2 text-primary font-bold">
+                      <Home size={18} />
+                      Indian Food Available
+                    </div>
                   </div>
                 </div>
+
+                {/* Recent Blogs */}
+                <div className="bg-white border-t-4 border-t-primary border border-gray-100 shadow-xl rounded-2xl p-6">
+                  <div className="flex items-center gap-2 text-primary font-bold mb-6 text-lg border-b border-gray-100 pb-4">
+                    Recent Blogs
+                  </div>
+                  <div className="space-y-4">
+                    <Link href="#" className="block group">
+                      <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                        Common Admission Mistakes to Avoid for MBBS in Russia
+                      </p>
+                      <span className="text-xs text-gray-400 mt-1 block">May 12, 2026</span>
+                    </Link>
+                    <Link href="#" className="block group border-t border-gray-50 pt-4">
+                      <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                        FMGL Regulations 2021 Explained for Indian MBBS Abroad Students
+                      </p>
+                      <span className="text-xs text-gray-400 mt-1 block">May 10, 2026</span>
+                    </Link>
+                    <Link href="#" className="block group border-t border-gray-50 pt-4">
+                      <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                        NMC Rules for MBBS Abroad in 2026: A Complete Breakdown
+                      </p>
+                      <span className="text-xs text-gray-400 mt-1 block">May 05, 2026</span>
+                    </Link>
+                    <Link href="#" className="block group border-t border-gray-50 pt-4">
+                      <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
+                        MBBS Fees in Russia vs Private Medical College Fees in India
+                      </p>
+                      <span className="text-xs text-gray-400 mt-1 block">May 02, 2026</span>
+                    </Link>
+                  </div>
+                </div>
+
               </div>
-
-              {/* Recent Blogs */}
-              <div className="bg-white border-t-4 border-t-primary border border-gray-100 shadow-xl rounded-2xl p-6">
-                <div className="flex items-center gap-2 text-primary font-bold mb-6 text-lg border-b border-gray-100 pb-4">
-                  Recent Blogs
-                </div>
-                <div className="space-y-4">
-                  <Link href="#" className="block group">
-                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
-                      Common Admission Mistakes to Avoid for MBBS in Russia
-                    </p>
-                    <span className="text-xs text-gray-400 mt-1 block">May 12, 2026</span>
-                  </Link>
-                  <Link href="#" className="block group border-t border-gray-50 pt-4">
-                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
-                      FMGL Regulations 2021 Explained for Indian MBBS Abroad Students
-                    </p>
-                    <span className="text-xs text-gray-400 mt-1 block">May 10, 2026</span>
-                  </Link>
-                  <Link href="#" className="block group border-t border-gray-50 pt-4">
-                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
-                      NMC Rules for MBBS Abroad in 2026: A Complete Breakdown
-                    </p>
-                    <span className="text-xs text-gray-400 mt-1 block">May 05, 2026</span>
-                  </Link>
-                  <Link href="#" className="block group border-t border-gray-50 pt-4">
-                    <p className="text-sm font-bold text-gray-800 group-hover:text-primary transition-colors line-clamp-2">
-                      MBBS Fees in Russia vs Private Medical College Fees in India
-                    </p>
-                    <span className="text-xs text-gray-400 mt-1 block">May 02, 2026</span>
-                  </Link>
-                </div>
-              </div>
-
-            </div>
             </div>
           </div>
         </div>

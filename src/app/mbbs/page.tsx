@@ -12,7 +12,7 @@ const DestinationsPortal = () => {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <Image 
+        <Image
           src="/mbbs-hero.png"
           alt="MBBS Abroad"
           fill
@@ -32,7 +32,7 @@ const DestinationsPortal = () => {
               Global Medical Career
             </span>
             <h1 className="text-4xl md:text-7xl font-extrabold text-white leading-tight">
-              Top Destinations for <br/> <span className="text-primary-light">MBBS Abroad</span>
+              Top Destinations for <br /> <span className="text-primary-light">MBBS Abroad</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto font-medium">
               Start your medical journey with world-class education, global recognition, and affordable fees. Choose your dream destination today.
@@ -57,13 +57,13 @@ const DestinationsPortal = () => {
                 <Link href={`/mbbs/${country.slug}`}>
                   <div className="relative h-[500px] rounded-[2.5rem] overflow-hidden border border-gray-100 bg-gray-50 transition-all duration-500 group-hover:border-primary/30 group-hover:-translate-y-2">
                     {/* Background Image */}
-                    <Image 
+                    <Image
                       src={country.image}
                       alt={country.name}
                       fill
                       className="object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
-                    
+
                     {/* Overlays */}
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/40 to-transparent opacity-90" />
                     <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-40 transition-opacity duration-500" />

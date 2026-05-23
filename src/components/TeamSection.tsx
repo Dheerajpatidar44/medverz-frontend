@@ -46,13 +46,14 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary-light opacity-20 -skew-x-12 translate-x-1/2 -z-10" />
+    <section className="py-12 md:py-16 bg-white relative overflow-hidden">
+      {/* Creative Background Elements */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2 -z-10" />
+      <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2" />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-28">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <div className="max-w-2xl space-y-4">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-1.5 rounded-full text-primary font-bold text-xs uppercase tracking-widest">
               <Users size={16} />
@@ -83,12 +84,8 @@ const TeamSection = () => {
         {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
               className="group"
             >
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-gray-100 bg-gray-50 mb-6 transition-all duration-500 group-hover:border-primary/30">
@@ -127,7 +124,7 @@ const TeamSection = () => {
                   {member.bio}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -28,9 +28,16 @@ const faqData = [
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [mounted, setMounted] = useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 md:py-16 bg-white relative overflow-hidden">
+      {/* Soft decorative background */}
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
       <div className="container mx-auto px-6 md:px-12 lg:px-28">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Got Questions?</span>

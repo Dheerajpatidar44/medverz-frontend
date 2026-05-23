@@ -7,7 +7,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({ 
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   description: "Get affordable MBBS admissions worldwide with expert counseling. We help students secure seats in top medical universities across Russia, Georgia, Kazakhstan, and more.",
 };
 
-import TopStrip from "@/components/TopStrip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeadPopup from "@/components/LeadPopup";
+import WorkAbroadPopup from "@/components/WorkAbroadPopup";
 import FloatingActions from "@/components/FloatingActions";
 
 export default function RootLayout({
@@ -31,15 +31,20 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
-        <TopStrip />
-        <hr className="border-gray-100" />
+      <body 
+        className="min-h-full flex flex-col overflow-x-hidden selection:bg-primary selection:text-white"
+        suppressHydrationWarning
+      >
         <Navbar />
-        {children}
+        <div className="flex-grow">
+          {children}
+        </div>
         <Footer />
         <LeadPopup />
+        <WorkAbroadPopup />
         <FloatingActions />
       </body>
     </html>
