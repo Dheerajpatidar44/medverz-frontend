@@ -16,6 +16,16 @@ const photoGallery = [
   { id: 7, category: 'Campus', image: '/images/gallery/gallery7.jpeg', title: 'Academic Excellence' },
   { id: 8, category: 'Students', image: '/images/gallery/gallery8.jpeg', title: 'Future Doctors' },
   { id: 9, category: 'Events', image: '/images/gallery/gallery9.jpeg', title: 'Global Opportunities' },
+  { id: 10, category: 'Campus', image: '/images/gallery/gallery10.jpeg', title: 'Campus Life' },
+  { id: 11, category: 'Students', image: '/images/gallery/gallery11.jpeg', title: 'Student Community' },
+  { id: 12, category: 'Events', image: '/images/gallery/gallery12.jpeg', title: 'Medical Events' },
+  { id: 13, category: 'Campus', image: '/images/gallery/gallery13.jpeg', title: 'University Campus' },
+  { id: 14, category: 'Students', image: '/images/gallery/gallery14.jpeg', title: 'Student Life' },
+  { id: 15, category: 'Events', image: '/images/gallery/gallery15.jpeg', title: 'Annual Events' },
+  { id: 16, category: 'Campus', image: '/images/gallery/gallery16.jpeg', title: 'University Facilities' },
+  { id: 17, category: 'Students', image: '/images/gallery/gallery17.jpeg', title: 'Practical Training' },
+  { id: 18, category: 'Events', image: '/images/gallery/gallery18.jpeg', title: 'Cultural Events' },
+  { id: 19, category: 'Campus', image: '/images/gallery/gallery19.jpeg', title: 'Library & Labs' },
 ];
 
 const categories = ['All', 'Campus', 'Students', 'Events'];

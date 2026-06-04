@@ -8,11 +8,9 @@ import {
   FileCheck, 
   PlaneTakeoff, 
   ShieldCheck, 
-  HeartHandshake, 
-  CheckCircle,
+  HeartHandshake,
   HelpCircle,
   PhoneCall,
-  Clock,
   ArrowRight
 } from 'lucide-react';
 import Link from 'next/link';
@@ -21,69 +19,39 @@ const ServicesPage = () => {
   const mainServices = [
     {
       icon: Compass,
-      title: "Admissions & Career Counseling",
-      description: "Our expert counselors guide you through the process of choosing the right destination and university for your medical education, matching your preferences, academic background, and budget.",
-      features: [
-        "Personalized career profiling",
-        "Detailed comparison of universities",
-        "Fee structure breakdowns",
-        "Country-specific comparison"
-      ]
+      image: "/about-hero.png", // Add your image path here like "/services/counseling.png"
+      title: "Personalized Guidance & Counseling",
+      description: "Finding a university abroad that suits your budget, as well as requirements, is difficult. Therefore, many students are confused about which country to choose or which university to apply to. For this, we have a team of well trained and expert counsellors who help you to identify your needs and goals and assist you with personal admission guidance and career counselling.",
     },
     {
       icon: GraduationCap,
-      title: "Direct Admission Assistance",
-      description: "We facilitate direct admissions to premier medical universities across Russia, Georgia, Kazakhstan, Kyrgyzstan, Uzbekistan, and Nepal. No donation or capitation fees required.",
-      features: [
-        "100% verified seats in top-tier colleges",
-        "NMC & WHO recognized programs",
-        "Direct university application processing",
-        "Official admission letter acquisition"
-      ]
+      image: "/about-hero.png",
+      title: "University Selection",
+      description: "Counsellors at Medverz are well experienced, competent and trained in helping the students in finding the right university for their education abroad, in retrospect of your individual needs and requirements. They offer some of the cherry-picked options, from 50+ top medical universities & 20+ countries, to help you to become a successful doctor.",
     },
     {
       icon: FileCheck,
-      title: "Documentation & Visa Support",
-      description: "Navigating international paperwork can be complex. We handle everything from document translation, apostille, and notarization to securing student visas from respective embassies.",
-      features: [
-        "Official translation and notary services",
-        "Apostille and ministry clearance",
-        "Embassy visa slot booking & interview prep",
-        "High visa approval success rate"
-      ]
+      image: "/about-hero.png",
+      title: "100% Admission Assistance",
+      description: "Medverz assist you with complete admission guidance at every step. When it comes to studying MBBS abroad, there can be piles of documentation required at various stages. Our team offers complete assistance through the entire process. Documentation Assistance Travel Assistance Forex Assistance Loan Assistance.",
     },
     {
       icon: PlaneTakeoff,
-      title: "Travel & Pre-Departure Briefing",
-      description: "We host comprehensive pre-departure briefings for students and parents. We arrange group flights, ensure custom clearances, and send a coordinator with the student group.",
-      features: [
-        "Parent-student orientation sessions",
-        "Discounted group flight bookings",
-        "Accompanied travel with Medverz staff",
-        "Pre-travel baggage & currency guidance"
-      ]
+      image: "/about-hero.png",
+      title: "Pre-Departure Guidance",
+      description: "Medverz conducts the pre-departure ceremony of Sobraniye for all the students who would be joining medical universities of Russia, where they can candid with their peers and form friendships. The students are equipped with all the necessary instructions so that they can easily adjust to the new environment and get the most outcomes during their stay in Russia.",
     },
     {
       icon: ShieldCheck,
-      title: "On-Campus & Post-Arrival Assistance",
-      description: "Our support doesn't end when you land. Our local coordinators receive you at the airport and guide you through registration, hostel check-in, and local settling.",
-      features: [
-        "Airport pick-up & transportation to campus",
-        "Hostel allotment and dining setup",
-        "Local police registration & medical checkup",
-        "Assistance with SIM cards and local bank accounts"
-      ]
+      image: "/about-hero.png",
+      title: "FMGE/NExT Coaching",
+      description: "We aim to constantly guide and prepare the students for their successful careers, therefore providing FMGE/NExT coaching alongside their MBBS study in top Russian government medical universities. We facilitate lecturers and subject experts from India to join the students in Russia and assist you with the necessary recommendations and assistance so that they perform better at the medical screening exams.",
     },
     {
       icon: HeartHandshake,
-      title: "Integrated Licensing & Career Prep",
-      description: "We are committed to your long-term success. We offer coaching modules for key licensing exams like FMGE / NExT (India), USMLE (USA), and PLAB (UK).",
-      features: [
-        "On-campus study resources & mock tests",
-        "Online/offline NExT coaching programs",
-        "Mentorship by practicing clinicians",
-        "Guidance on global clinical rotations"
-      ]
+      image: "/about-hero.png",
+      title: "On-Arrival Benefits",
+      description: "Explore the unmatchable advantages of studying MBBS in Russia with extensive benefits. Final documentation in the university Hostel arrangements and Indian canteens Issuance of local SIM Card & 10 minutes complimentary call Assistance in obtaining the Certificate of Equivalence from the Ministry of Education of the destination country. Visa extension, if required Visa and travel arrangements for students, and more.",
     }
   ];
 
@@ -135,39 +103,39 @@ const ServicesPage = () => {
       </section>
 
       {/* 3. Main Services Grid */}
-      <section className="py-12 bg-gray-50/50">
+      <section className="py-20 bg-gray-50/50">
         <div className="container mx-auto px-6 md:px-12 lg:px-28">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {mainServices.map((service, idx) => (
               <div 
                 key={idx} 
-                className="bg-white rounded-3xl p-8 border border-gray-100/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className={`text-white flex flex-col group transition-all duration-300 hover:-translate-y-1 ${idx === 1 || idx === 4 ? 'bg-primary-dark' : 'bg-primary'}`}
               >
-                <div className="space-y-6">
-                  {/* Icon Wrapper */}
-                  <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <service.icon size={28} />
+                <div className="p-3">
+                  {/* Image / Icon Header Section */}
+                  <div className="w-full bg-[#E5E7EB] aspect-[4/3] relative flex items-center justify-center overflow-hidden">
+                    {service.image ? (
+                      <img 
+                        src={service.image} 
+                        alt={service.title} 
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="relative z-10 w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center">
+                        <service.icon size={36} className="text-gray-400" strokeWidth={1.5} />
+                      </div>
+                    )}
                   </div>
-                  
-                  {/* Title & Description */}
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed font-medium">
-                      {service.description}
-                    </p>
-                  </div>
-
-                  {/* Bullet points */}
-                  <ul className="space-y-2.5 pt-2">
-                    {service.features.map((feat, fidx) => (
-                      <li key={fidx} className="flex items-start gap-2.5 text-xs text-gray-600 font-semibold">
-                        <CheckCircle size={14} className="text-primary mt-0.5 flex-shrink-0" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
+                </div>
+                
+                {/* Content */}
+                <div className="text-center flex flex-col flex-grow px-5 pb-6 pt-3">
+                  <h3 className="text-xl font-bold mb-4 leading-snug">
+                    {service.title}
+                  </h3>
+                  <p className="text-[13.5px] leading-[1.65] font-medium text-white/95">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}

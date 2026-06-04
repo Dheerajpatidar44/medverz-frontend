@@ -23,18 +23,18 @@ const ExpertiseGrid = () => {
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[650px]">
-          
+
           {/* Left Column: Study Abroad & Why Choose Us */}
           <div className="md:col-span-5 flex flex-col gap-6 h-full">
             {/* Study Abroad Card */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
-              <Image 
-                src="/study-abroad.png" 
-                alt="Study Abroad" 
-                fill 
+              <Image
+                src="/study-abroad.png"
+                alt="Study Abroad"
+                fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -42,12 +42,12 @@ const ExpertiseGrid = () => {
                 <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
                   <GraduationCap className="text-white w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-1">Study Abroad</h3>
+                <h3 className="text-2xl font-bold text-white mb-1">Study MBBS Abroad</h3>
               </div>
             </motion.div>
 
             {/* Why Choose Us Card */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="relative h-auto md:h-1/2 bg-[#F8FAFC] rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm flex flex-col justify-center overflow-hidden"
             >
@@ -100,14 +100,14 @@ const ExpertiseGrid = () => {
 
           {/* Middle Column: Work Permit (Tall) */}
           <div className="md:col-span-3 h-full">
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="relative h-[300px] md:h-full rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
-              <Image 
-                src="/work-permit.png" 
-                alt="Work Permit" 
-                fill 
+              <Image
+                src="/work-permit.png"
+                alt="Work Permit"
+                fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -123,14 +123,14 @@ const ExpertiseGrid = () => {
           {/* Right Column: Tourist Visa & Immigration */}
           <div className="md:col-span-4 flex flex-col gap-6 h-full">
             {/* Tourist Visa Card */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
-              <Image 
-                src="/tourist-visa.png" 
-                alt="Tourist Visa" 
-                fill 
+              <Image
+                src="/tourist-visa.png"
+                alt="Tourist Visa"
+                fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -143,14 +143,14 @@ const ExpertiseGrid = () => {
             </motion.div>
 
             {/* Immigration & PR Card */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="relative h-[220px] md:h-1/2 rounded-3xl overflow-hidden group cursor-pointer shadow-lg"
             >
-              <Image 
-                src="/immigration.png" 
-                alt="Immigration & PR" 
-                fill 
+              <Image
+                src="/immigration.png"
+                alt="Immigration & PR"
+                fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
             </p>
             <div className="pt-4">
               <button 
-                className="bg-white text-primary-dark px-10 py-3.5 rounded-full font-bold hover:bg-primary-light transition-all shadow-xl text-sm uppercase tracking-wider"
+                className="bg-white text-primary-dark px-10 py-3.5 rounded-md font-bold hover:bg-primary-light transition-all shadow-xl text-sm uppercase tracking-wider"
                 suppressHydrationWarning
               >
                 Get Started

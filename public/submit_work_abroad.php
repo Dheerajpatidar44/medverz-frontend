@@ -30,14 +30,14 @@ if (!$data) {
 
 // Extract fields
 $name = isset($data['name']) ? htmlspecialchars(strip_tags($data['name'])) : '';
-$phone = isset($data['phone']) ? htmlspecialchars(strip_tags($data['phone'])) : '';
 $email = isset($data['email']) ? filter_var($data['email'], FILTER_SANITIZE_EMAIL) : '';
-$course = isset($data['course']) ? htmlspecialchars(strip_tags($data['course'])) : 'Work Abroad';
-
-// Support both standard DB field names and friendly API field names for maximum flexibility
-$profession = isset($data['profession']) ? htmlspecialchars(strip_tags($data['profession'])) : (isset($data['state']) ? htmlspecialchars(strip_tags($data['state'])) : '');
-$experience = isset($data['experience']) ? htmlspecialchars(strip_tags($data['experience'])) : (isset($data['city']) ? htmlspecialchars(strip_tags($data['city'])) : '');
-$destination = isset($data['destination']) ? htmlspecialchars(strip_tags($data['destination'])) : (isset($data['country']) ? htmlspecialchars(strip_tags($data['country'])) : '');
+$phone = isset($data['phone']) ? htmlspecialchars(strip_tags($data['phone'])) : '';
+$country = isset($data['country']) ? htmlspecialchars(strip_tags($data['country'])) : '';
+$state = isset($data['state']) ? htmlspecialchars(strip_tags($data['state'])) : '';
+$city = isset($data['city']) ? htmlspecialchars(strip_tags($data['city'])) : '';
+$preferredCountry = isset($data['preferredCountry']) ? htmlspecialchars(strip_tags($data['preferredCountry'])) : '';
+$planTime = isset($data['planTime']) ? htmlspecialchars(strip_tags($data['planTime'])) : '';
+$consent = isset($data['consent']) && $data['consent'] ? 'Yes' : 'No';
 
 if (empty($name) || empty($phone) || empty($email)) {
     http_response_code(400);
@@ -148,7 +148,7 @@ $htmlContent = "
         <p>Medverz Education Overseas Recruitment</p>
       </div>
       <div class='content'>
-        <p class='welcome-text'>Hello, you have received a new consultation request from the Work Abroad page on the website. Here are the applicant's details:</p>
+        <p class='welcome-text'>Hello, you have received a new consultation request from the Work Abroad page. Here are the applicant's details:</p>
         <table class='detail-table'>
           <tr>
             <th>Full Name</th>
@@ -163,16 +163,28 @@ $htmlContent = "
             <td><a href='tel:{$phone}' style='color: #0a8ba9; text-decoration: none;'>{$phone}</a></td>
           </tr>
           <tr>
-            <th>Profession / Specialization</th>
-            <td>{$profession}</td>
+            <th>Home Country</th>
+            <td>{$country}</td>
           </tr>
           <tr>
-            <th>Years of Experience</th>
-            <td>{$experience}</td>
+            <th>Home State</th>
+            <td>{$state}</td>
           </tr>
           <tr>
-            <th>Destination Country</th>
-            <td>{$destination}</td>
+            <th>City</th>
+            <td>{$city}</td>
+          </tr>
+          <tr>
+            <th>Preferred Country to Work In</th>
+            <td>{$preferredCountry}</td>
+          </tr>
+          <tr>
+            <th>Plan to go abroad</th>
+            <td>{$planTime}</td>
+          </tr>
+          <tr>
+            <th>Consent Given</th>
+            <td>{$consent}</td>
           </tr>
         </table>
       </div>

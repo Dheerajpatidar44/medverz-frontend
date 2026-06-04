@@ -37,7 +37,7 @@ const WorkAbroadPage = () => {
             We provide complete end-to-end support for professionals seeking to work and settle abroad. Discover international opportunities tailored for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            <LeadPopupButton popupType="work-abroad" className="bg-white text-[#0a8ba9] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all shadow-2xl active:scale-95 flex items-center justify-center gap-2 text-lg">
+            <LeadPopupButton popupType="work-abroad" className="bg-white text-[#0a8ba9] px-10 py-4 rounded-md font-bold hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all shadow-2xl active:scale-95 flex items-center justify-center gap-2 text-lg">
               Get Started <ArrowRight size={22} />
             </LeadPopupButton>
           </div>
@@ -159,7 +159,7 @@ const WorkAbroadPage = () => {
           <p className="text-white/80 mb-12 text-xl md:text-2xl max-w-2xl mx-auto">
             Connect with our experts today and take the first step towards your international career.
           </p>
-          <LeadPopupButton popupType="work-abroad" className="bg-gradient-to-r from-[#0a8ba9] to-[#7cb94c] text-white px-12 py-5 rounded-full font-bold transition-all shadow-[0_10px_40px_rgba(124,185,76,0.3)] hover:shadow-[0_20px_60px_rgba(124,185,76,0.5)] active:scale-95 text-xl">
+          <LeadPopupButton popupType="work-abroad" className="bg-gradient-to-r from-[#0a8ba9] to-[#7cb94c] text-white px-12 py-5 rounded-md font-bold transition-all shadow-[0_10px_40px_rgba(124,185,76,0.3)] hover:shadow-[0_20px_60px_rgba(124,185,76,0.5)] active:scale-95 text-xl">
             Contact Our Experts
           </LeadPopupButton>
         </div>

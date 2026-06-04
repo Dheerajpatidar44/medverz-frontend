@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { ChevronDown, Menu, X, Search, FileText, Phone, Mail, Clock, Globe, GraduationCap, MapPin, Sparkles } from 'lucide-react';
+import { ChevronDown, Menu, X, Search, FileText, Phone, Mail, Clock, Globe, GraduationCap, MapPin, Sparkles, AlignRight } from 'lucide-react';
 
 import { mbbsData } from '@/data/mbbsData';
 
@@ -46,6 +46,9 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
 
+  // Right sidebar state
+  const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(false);
+
   React.useEffect(() => {
     setMounted(true);
 
@@ -64,9 +67,9 @@ const Navbar = () => {
     };
   }, []);
 
-  // Lock scroll when search overlay is open
+  // Lock scroll when search overlay or right sidebar is open
   React.useEffect(() => {
-    if (isSearchOpen) {
+    if (isSearchOpen || isRightSidebarOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
@@ -74,7 +77,7 @@ const Navbar = () => {
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isSearchOpen]);
+  }, [isSearchOpen, isRightSidebarOpen]);
 
   // Reset active suggestion index on query change
   React.useEffect(() => {
@@ -260,7 +263,7 @@ const Navbar = () => {
         }`}>
         {/* Left Column: Slanted Logo Block */}
         <div
-          className={`bg-primary text-white flex items-center justify-center shrink-0 relative transition-all duration-300 ease-in-out ${isScrolled ? 'pl-6 pr-10 py-2' : 'pl-6 pr-14 py-4'
+          className={`bg-slate-50 flex items-center justify-center shrink-0 relative transition-all duration-300 ease-in-out ${isScrolled ? 'pl-6 pr-10 py-1' : 'pl-6 pr-14 py-2'
             }`}
           style={{ clipPath: 'polygon(0 0, 100% 0, 80% 100%, 0 100%)' }}
         >
@@ -268,9 +271,9 @@ const Navbar = () => {
             <Image
               src="/medverz.png"
               alt="Medverz logo"
-              width={200}
-              height={56}
-              className={`w-auto object-contain brightness-0 invert transition-all duration-300 ease-in-out ${isScrolled ? 'h-10 lg:h-12' : 'h-14 lg:h-16'
+              width={250}
+              height={70}
+              className={`w-auto object-contain transition-all duration-300 ease-in-out origin-left ${isScrolled ? 'scale-100 lg:scale-110 h-10 lg:h-12' : 'scale-110 lg:scale-[1.3] h-16 lg:h-[80px]'
                 }`}
               style={{ width: 'auto' }}
               priority
@@ -353,10 +356,10 @@ const Navbar = () => {
           </div>
 
           {/* Row 2: Main Navigation Menu */}
-          <div className={`flex-grow flex items-center justify-between pl-6 pr-0 transition-all duration-300 ease-in-out ${isScrolled ? 'min-h-[70px]' : 'min-h-[60px]'
+          <div className={`flex-grow flex items-center pl-6 pr-0 transition-all duration-300 ease-in-out ${isScrolled ? 'min-h-[70px]' : 'min-h-[60px]'
             }`}>
             {/* Desktop Navigation Links */}
-            <div className="flex items-center gap-3 xl:gap-5 py-2">
+            <div className="flex-1 flex items-center justify-center gap-3 xl:gap-5 py-2">
               {navLinks.map((link) => (
                 <div key={link.name} className="relative group">
                   {link.dropdown ? (
@@ -428,6 +431,15 @@ const Navbar = () => {
                 <Search size={20} className="stroke-[2.5]" />
               </button>
 
+              {/* Sidebar Toggle Icon */}
+              <button
+                onClick={() => setIsRightSidebarOpen(true)}
+                className="flex items-center justify-center pr-4 text-gray-700 hover:text-primary cursor-pointer transition-colors border-0 bg-transparent outline-none focus:text-primary"
+                aria-label="Toggle Sidebar"
+              >
+                <AlignRight size={24} className="stroke-[2.5]" />
+              </button>
+
               {/* Slanted Divider */}
               <div className="flex items-center">
                 <div className="w-[1.5px] h-6 bg-gray-300 rotate-[15deg] hidden lg:block mx-2"></div>
@@ -436,7 +448,7 @@ const Navbar = () => {
               {/* Slanted Apply Now Button */}
               <button
                 onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
-                className="bg-primary text-white pl-8 pr-6 font-black text-sm hover:bg-primary-dark transition-all active:scale-95 whitespace-nowrap animate-zoom-pulse flex items-center gap-2 select-none"
+                className="bg-slate-100 text-primary pl-8 pr-6 font-black text-sm hover:bg-slate-200 transition-all active:scale-95 whitespace-nowrap animate-zoom-pulse flex items-center gap-2 select-none"
                 style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
               >
                 <FileText size={16} className="stroke-[2.5]" />
@@ -513,7 +525,7 @@ const Navbar = () => {
                 </button>
                 <button
                   onClick={() => window.dispatchEvent(new CustomEvent('open-lead-popup'))}
-                  className="bg-primary text-white px-4 py-2 rounded-md text-xs font-bold transition-all active:scale-95 shadow-sm"
+                  className="bg-slate-100 text-primary hover:bg-slate-200 px-4 py-2 rounded-md text-xs font-bold transition-all active:scale-95 shadow-sm"
                 >
                   Apply Now
                 </button>
@@ -654,7 +666,7 @@ const Navbar = () => {
                 setIsMenuOpen(false);
                 window.dispatchEvent(new CustomEvent('open-lead-popup'));
               }}
-              className="bg-primary text-white px-6 py-3.5 rounded-full font-bold hover:bg-primary-dark transition-all shadow-lg animate-zoom-pulse"
+              className="bg-slate-100 text-primary px-6 py-3.5 rounded-md font-bold hover:bg-slate-200 transition-all shadow-lg animate-zoom-pulse"
               suppressHydrationWarning
             >
               APPLY NOW
@@ -893,6 +905,65 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
+      {/* Right Sidebar Overlay (Desktop Only) */}
+      <div className={`fixed inset-0 z-[250] transition-opacity duration-500 hidden lg:block ${isRightSidebarOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+        <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setIsRightSidebarOpen(false)} />
+        <div className={`absolute top-0 right-0 h-full w-[400px] bg-white shadow-2xl flex flex-col transition-transform duration-500 ease-out ${isRightSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="p-6 flex flex-col h-full overflow-y-auto">
+            {/* Close Button */}
+            <div className="flex justify-end mb-4">
+              <button onClick={() => setIsRightSidebarOpen(false)} className="bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full p-2 transition-colors">
+                <X size={20} className="stroke-[2.5]" />
+              </button>
+            </div>
+            
+            {/* Logo */}
+            <div className="mb-6">
+              <Image src="/medverz.png" alt="Medverz logo" width={240} height={80} className="w-auto h-24 object-contain" />
+            </div>
+            
+            {/* About Us */}
+            <div className="mb-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">About Us</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Medverz Education is dedicated to providing affordable MBBS admissions worldwide. We bridge the gap between your dreams and a global medical career.
+              </p>
+            </div>
+            
+            {/* Where to Find Us */}
+            <div className="mb-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Where to Find Us</h3>
+              <div className="flex flex-col gap-4 text-sm text-gray-600">
+                <div className="flex items-start gap-3">
+                  <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
+                  <span className="leading-relaxed">SHOP NO F-7, FIRST FLOOR, PROPERTY NO 156/3, RIYAZ COMPLEX, BATLA HOUSE CHOWK, BALTA HOUSE, OKHLA, JAMIA NAGAR, New Delhi - 110025</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-primary shrink-0" />
+                  <a href="tel:+919070107030" className="hover:text-primary transition-colors font-medium">+91 90701 07030</a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail size={18} className="text-primary shrink-0" />
+                  <a href="mailto:info@medverzeducation.com" className="hover:text-primary transition-colors font-medium">info@medverzeducation.com</a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Follow Us */}
+            <div className="mt-auto pb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Follow Us</h3>
+              <div className="flex items-center gap-4">
+                {socials.map((social) => (
+                  <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300" title={social.name}>
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d={social.path} /></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
